@@ -1,0 +1,7 @@
+# Copy to local-exlap.properties (never commit the real file).
+# EXLAP credentials must be obtained from an authorized source for YOUR setup.
+EXLAP_USER=
+EXLAP_PASSWORD=
+# Optional: separate permission profile for original-car media control
+EXLAP_MEDIA_USER=
+EXLAP_MEDIA_PASSWORD=

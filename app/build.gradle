@@ -1,0 +1,48 @@
+plugins { id 'com.android.application' }
+android { namespace 'com.jfvag.aibox'; compileSdk 35
+ buildFeatures { buildConfig true }
+ defaultConfig { applicationId 'com.jfvag.aibox'; minSdk 26; targetSdk 28; versionCode 1; versionName '1.0.0'  }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+
+dependencies { implementation 'com.google.zxing:core:3.5.3' }
+
+// Published EXLAP reference profiles (EXLAP-mib2-atlas, CC BY 4.0).
+// User/device-specific overrides live in gitignored local-exlap.properties.
+// Acceptance depends on head-unit firmware, services and authorization.
+def credentials = new Properties()
+def privateFile = rootProject.file('local-exlap.properties')
+if (privateFile.exists()) { privateFile.withInputStream { credentials.load(it) } }
+def quoteJava = { String s -> '\"' + s.replace('\\', '\\\\').replace('\"', '\\"') + '\"' }
+android.defaultConfig {
+  buildConfigField 'String', 'EXLAP_USER', quoteJava(credentials.getProperty('EXLAP_USER', 'OPEN-300000'))
+  buildConfigField 'String', 'EXLAP_PASSWORD', quoteJava(credentials.getProperty('EXLAP_PASSWORD', 'O6z0lZ3/+IbaUmDxnd0tJ95p8K5pHvV/AoaOsJn6A/c='))
+  buildConfigField 'String', 'EXLAP_MEDIA_USER', quoteJava(credentials.getProperty('EXLAP_MEDIA_USER', 'OPEN-000C00'))
+  buildConfigField 'String', 'EXLAP_MEDIA_PASSWORD', quoteJava(credentials.getProperty('EXLAP_MEDIA_PASSWORD', 'gJZlPWrttYGuex7UlyI2GhyQ/3FTeMRknlYeaXH70TQ='))
+}
+
+android {
+    signingConfigs {
+        jfRelease {
+            if (System.getenv('JF_KEYSTORE_FILE')) {
+                storeFile file(System.getenv('JF_KEYSTORE_FILE'))
+                storePassword System.getenv('JF_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('JF_KEY_ALIAS')
+                keyPassword System.getenv('JF_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (System.getenv('JF_KEYSTORE_FILE')) signingConfig signingConfigs.jfRelease
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
