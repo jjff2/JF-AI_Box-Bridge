@@ -1051,8 +1051,8 @@ function scalar(d,key){const a=arr(d,key);const v=clean(a);return v.length?v[0]:
 function formatMetricValue(value,key){
  if(value===null||value===undefined)return '—';
  const str=String(value).trim();
- if(str==='true')return '開啟';
- if(str==='false')return '關閉';
+ if(str==='true')return uiLanguage==='zh-Hant'?'開啟':({en:'On',ja:'オン',de:'Ein',es:'Activado',fr:'Activé',it:'Attivo',ru:'Вкл.',pt:'Ligado'}[uiLanguage]||'On');
+ if(str==='false')return uiLanguage==='zh-Hant'?'關閉':({en:'Off',ja:'オフ',de:'Aus',es:'Desactivado',fr:'Désactivé',it:'Disattivo',ru:'Выкл.',pt:'Desligado'}[uiLanguage]||'Off');
  if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i.test(str))return str;
  const num=Number(str);if(!Number.isFinite(num))return str;
  const precision=/(Acceleration|ChargingAirPressure|yawRate)/i.test(key||'')?3:
@@ -1062,7 +1062,7 @@ function formatMetricValue(value,key){
  if(precision===0)return String(Math.round(num));
  return String(Number(rounded)===0?0:Number(rounded));
 }
-function fmt(v){if(v===null||v===undefined)return '—';if(v==='true')return '開啟';if(v==='false')return '關閉';return String(v)}
+function fmt(v){if(v===null||v===undefined)return '—';if(v==='true')return formatMetricValue('true','');if(v==='false')return formatMetricValue('false','');return String(v)}
 // Per-field freshness. Keep last reading visible but dim it when the source stops updating.
 const STALE_LABELS={
  'zh-Hant':['資料暫未更新','胎壓資料暫未更新'],
@@ -2302,4 +2302,87 @@ body.page-media #media h2{font-size:12px!important;margin:3px 0!important}
 }
 @media (max-width:750px){body header.top{box-sizing:border-box!important;}body header.top .jf-top-metrics{display:none!important;}}
 </style>
+<script id="jf-complete-language-bridge">
+/* UI-only localization layer: no EXLAP, telemetry, or control logic changes. */
+(function(){
+ const en={
+ '原車音量':'Vehicle volume','原車音量滑桿':'Vehicle volume slider','音量':'Volume','音樂':'Music','自動音源':'Automatic audio',
+ '白天':'Day','夜晚':'Night','白天模式':'Day mode','夜晚模式':'Night mode','切換白天夜晚模式':'Toggle day/night mode',
+ '連線設定':'Connection settings','開啟 AI Box Android Wi-Fi 設定':'Open Android Wi-Fi settings',
+ '車輛資訊':'Vehicle data','車輛資料':'Vehicle data','即時車輛資訊':'Live vehicle data','自訂首頁':'Customize dashboard',
+ '自訂首頁數據':'Customize dashboard metrics','完成':'Done','全部欄位':'All fields','已有資料':'Available data',
+ '可能不支援':'Possibly unsupported','隱藏可能不支援':'Hide unsupported','重設排序':'Reset order','全部顯示':'Show all',
+ '上一頁':'Previous page','下一頁':'Next page','九宮格車輛數據':'Vehicle data grid',
+ '左右滑動切換資料頁 · 點選編輯可以調整排列':'Swipe to change pages · Tap edit to customize layout',
+ '勾選要顯示的資料，用上下箭頭調整順序。每頁顯示 9 項，自動記住設定。':'Select metrics and adjust their order. Nine metrics per page; settings are saved.',
+ '開啟音樂頁':'Open music page','四輪胎壓':'Four-wheel tire pressure','單位':'Unit','胎壓單位':'Pressure unit',
+ '左前':'Front left','右前':'Front right','左後':'Rear left','右後':'Rear right','車頭 ↑':'Front ↑','建議':'Target',
+ '正常':'Normal','偏低':'Low','無資料':'No data','資料暫未更新':'Data not recently updated',
+ '音訊資訊':'Audio information','正在播放':'Now playing','播放暫停':'Play/pause','播放或暫停':'Play or pause',
+ '上一首':'Previous track','下一首':'Next track','靜音':'Mute','已靜音':'Muted','未靜音':'Unmuted',
+ '原車':'Vehicle','開啟':'On','關閉':'Off','啟用':'Enable','停用':'Disable',
+ '授權讀取 AI Box 播放資訊':'Allow AI Box media access','音樂封面':'Album artwork',
+ '開啟 AI Box Touchpad':'Open AI Box Touchpad','開啟 Touchpad':'Enable Touchpad',
+ '關閉 Touchpad':'Disable Touchpad','直接開啟 Touchpad':'Open Touchpad directly',
+ '已啟用':'Enabled','未啟用':'Disabled','無法讀取 Touchpad 狀態':'Unable to read Touchpad status',
+ '開啟原車媒體':'Enable vehicle media','關閉原車媒體':'Disable vehicle media',
+ '原車媒體 EXLAP 已開啟':'Vehicle media EXLAP enabled','隔離中：原車媒體 EXLAP 停用':'Vehicle media EXLAP disabled',
+ '無法取得原車音量，請確認 EXLAP 連線':'Unable to read vehicle volume; check EXLAP connection',
+ '車機音量調整失敗':'Vehicle volume adjustment failed','已傳送原車音量調整指令':'Vehicle volume command sent',
+ '音量調整中止：':'Volume adjustment stopped: ','控制失敗':'Control failed',
+ '正在要求車機重新連線…':'Requesting head unit reconnection…','正在暫停車機連線…':'Pausing head unit connection…',
+ '操作失敗':'Operation failed','Bridge 操作失敗：':'Bridge operation failed: ',
+ '切換':'Switch','地圖':'Map','地圖來源':'Map provider','開啟 Google Maps App':'Open Google Maps app',
+ '儲存並載入':'Save and load','清除 Key':'Clear key','自訂':'Customize','重設':'Reset',
+ '語言':'Language','設定':'Settings','連線':'Connection','狀態':'Status',
+ '開啟目前播放 App':'Open current media app','開啟':'Open',
+ '連線中':'Connecting','已連線':'Connected','尚未連線':'Disconnected',
+ '儲存':'Save','取消':'Cancel','確認':'Confirm','返回':'Back','首頁':'Home',
+ '車輛資訊持續更新；地圖需要 AI Box 具備網際網路連線。':'Vehicle data continues updating; maps require internet access on the AI Box.',
+ '可選 OpenStreetMap 或 Google Maps Embed（需個人 API Key）。不是完整 Google Maps 導航；僅在安全停車時操作地圖。':'Choose OpenStreetMap or Google Maps Embed (requires your API key). Not full navigation; use only while parked.',
+ '請在 AI Box 上開啟 Android Wi-Fi 設定，選擇車機 Wi-Fi。':'Open Android Wi-Fi settings on the AI Box and select the head unit Wi-Fi.',
+ '手機與 iPad 可直接開啟 Touchpad；無障礙授權請在 AI Box 上操作。':'Phones and iPads can open Touchpad; enable Accessibility on the AI Box.',
+ 'Safari 埠 18777':'Safari port 18777'
+ };
+ // Existing built-in dictionaries handle translated keys. For untranslated labels,
+ // fall back to English rather than leaving Chinese in non-Chinese locales.
+ const other={ja:{'白天':'昼','夜晚':'夜','原車音量':'車両音量','開啟':'オン','關閉':'オフ'},de:{'白天':'Tag','夜晚':'Nacht','原車音量':'Fahrzeuglautstärke','開啟':'Ein','關閉':'Aus'},es:{'白天':'Día','夜晚':'Noche','原車音量':'Volumen del vehículo','開啟':'Activado','關閉':'Desactivado'},fr:{'白天':'Jour','夜晚':'Nuit','原車音量':'Volume du véhicule','開啟':'Activé','關閉':'Désactivé'},it:{'白天':'Giorno','夜晚':'Notte','原車音量':'Volume del veicolo'},ru:{'白天':'День','夜晚':'Ночь','原車音量':'Громкость автомобиля'},pt:{'白天':'Dia','夜晚':'Noite','原車音量':'Volume do veículo'}};
+ const chinese=/[\u3400-\u9fff]/;
+ const lang=()=>typeof uiLanguage==='string'?uiLanguage:(document.documentElement.lang||'en');
+ const lookup=(v)=>{const key=v.trim();if(!key||!chinese.test(key))return null;const dict=other[lang()]||{};return dict[key]||en[key]||null;};
+ const replaceText=(node)=>{
+   if(!node||!node.parentElement||node.parentElement.closest('script,style,textarea,pre,code,[contenteditable]'))return;
+   const value=node.nodeValue||'';if(!chinese.test(value))return;
+   const exact=lookup(value);if(exact){node.nodeValue=value.replace(value.trim(),exact);return;}
+   let result=value;
+   for(const [zh,eng] of Object.entries(en).sort((a,b)=>b[0].length-a[0].length)){
+     if(zh.length<2||!result.includes(zh))continue;
+     const translated=(other[lang()]||{})[zh]||eng;
+     result=result.split(zh).join(translated);
+   }
+   if(result!==value)node.nodeValue=result;
+ };
+ const walk=(root)=>{
+   if(lang()==='zh-Hant')return;
+   if(root.nodeType===3){replaceText(root);return;}
+   if(root.nodeType!==1)return;
+   if(root.matches('script,style,textarea,pre,code,[contenteditable]'))return;
+   for(const attr of ['title','aria-label','placeholder']){
+     const value=root.getAttribute(attr);if(!value||!chinese.test(value))continue;
+     let out=value;for(const [zh,eng] of Object.entries(en).sort((a,b)=>b[0].length-a[0].length)){
+       if(zh.length<2)continue;
+       out=out.split(zh).join((other[lang()]||{})[zh]||eng);
+     }
+     if(out!==value)root.setAttribute(attr,out);
+   }
+   for(const child of Array.from(root.childNodes))walk(child);
+ };
+ let pending=false;
+ const schedule=()=>{if(pending)return;pending=true;setTimeout(()=>{pending=false;walk(document.body);},0);};
+ const observer=new MutationObserver(schedule);
+ observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','aria-label','placeholder']});
+ document.getElementById('languageSelect')?.addEventListener('change',()=>setTimeout(schedule,30));
+ schedule();
+})();
+</script>
 </body></html>
