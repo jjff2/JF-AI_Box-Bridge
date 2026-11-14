@@ -1,202 +1,123 @@
 # JF AIBox Bridge
 
-**Version 1.0.0 | Free Community Project | VW Group MIB2.5 | Android Phone / AI Box**
+**Android Vehicle Dashboard for compatible VW Group MIB2.5 head units**
 
-An Android-based vehicle information dashboard and remote-control solution for compatible Volkswagen Group MIB2.5 infotainment systems.
+JF AIBox Bridge is a community-developed Android application that uses EXLAP to display supported vehicle information on an Android phone or Android AI Box. It offers an alternative interface while the community continues developing native MIB interface modifications.
 
-## About This Project
+**Current target:** Compatible VW Group **MIB2.5** systems, including tested MU1101-based configurations. Other head units, firmware versions and vehicles are not guaranteed to work.
 
-JF AIBox Bridge is an independent community project designed to display vehicle information through EXLAP using an Android phone or Android AI Box.
+## Screenshots — Real Vehicle Demonstration
 
-Many talented developers are currently working on modifying native MIB head unit interfaces. While those projects continue to evolve, JF AIBox Bridge offers an alternative way to access vehicle information without modifying the native head unit interface.
+### Vehicle Dashboard & Tire Pressure Monitoring
 
-This project is not intended to replace native MIB modifications. It is simply another option for enthusiasts who want to explore vehicle data and additional features in the meantime.
+Live EXLAP data shown on the vehicle display: speed, engine RPM, torque, boost pressure, battery voltage, acceleration, coolant temperature and four-wheel tire pressure (where supported).
 
-**Current compatibility:** Developed for compatible VW Group MIB2.5 head units, including MU1101-based systems. Compatibility with other head units, vehicles, Android devices, and firmware versions has not been fully verified.
+![JF AIBox Bridge vehicle dashboard and TPMS](screenshots/dashboard.jpg)
 
-No separate JF activation code, subscription, or cloud account is required.
+### Media Control
 
-## Features
+Media information, playback buttons, source status and volume controls. Available controls depend on the connected media session and device.
 
-### Vehicle Information Dashboard
-- Display supported real-time vehicle data through EXLAP
-- Monitor available tire pressure (TPMS) information
-- View supported vehicle status and telemetry
-- Automatic head unit IP detection and connection diagnostics
+![JF AIBox Bridge media control](screenshots/media.jpg)
 
-### Media Dashboard
-- Display available music information and playback status
-- Show supported track details
-- Control supported media playback
-- Access media functions through the dashboard
+## Download
 
-### iPhone / iPad Safari Touchpad
-- Remotely control the Android device using Safari
-- Touchpad gestures and navigation controls
-- Supported media commands
-- Launch supported Android app shortcuts
-- View Android screen snapshots through JPEG-based screen mirroring
+**[JF AIBox Bridge v1.0.0 — GitHub Release (APK)](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.0)**
 
-### Additional Features
-- Local Wi-Fi connectivity
-- QR codes for accessing browser-based controls
-- Connection and compatibility diagnostics
-- Customizable dashboard settings
-- No separate JF software activation
+On the release page, expand **Assets** and download `app.apk`. Install it on a compatible Android device. Only install software from sources you trust.
 
-Feature availability depends on the vehicle, head unit firmware, Android permissions, network configuration, and installed applications.
+## Main Features
 
-## Download APK
+- **Vehicle dashboard:** Display supported real-time EXLAP vehicle data, including speed, RPM, battery voltage, temperatures and other available signals.
+- **Tire pressure:** Show four-wheel TPMS readings and status when provided by the vehicle.
+- **Media dashboard:** View available track/session information and use supported playback and volume controls.
+- **Safari Touchpad:** Access a local browser-based remote control from an iPhone or iPad, with supported navigation, shortcuts and controls.
+- **Screen mirroring:** Optional Android screen capture for compatible local browser views; Android permission approval is required.
+- **Connection tools:** Wi-Fi access information, QR codes and diagnostics to help check connectivity.
+- **Customizable interface:** Dashboard pages and appearance options, depending on the app build.
 
-**Latest release: v1.0.0**
+Some functions require Android permissions and may not work with every vehicle, firmware, Android device or media app.
 
-[Download JF AIBox Bridge v1.0.0](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.0)
+## Requirements
 
-Open the release page and download `app.apk` from the Assets section.
+- An Android phone or Android AI Box capable of running the application.
+- A compatible VW Group MIB2.5 infotainment system with accessible EXLAP services.
+- A local Wi-Fi connection allowing the Android device to communicate with the head unit.
+- Additional Android permissions for optional Touchpad, media metadata and screen capture features.
 
-### Installation
+**Important:** Connecting to an ordinary internet hotspot alone does not provide access to vehicle EXLAP data.
 
-1. Download the APK from the official GitHub release.
-2. Copy the APK to your Android phone or Android AI Box.
-3. Allow installation from the selected source if Android requests permission.
-4. Install and launch JF AIBox Bridge.
-5. Connect your Android device to the compatible MIB2.5 head unit's Wi-Fi network.
-6. Open the application and check the EXLAP connection status.
+## Quick Start
 
-For detailed instructions, see [Installation and Wi-Fi Setup](INSTALLATION.md).
+1. Download `app.apk` from the [v1.0.0 release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.0).
+2. Install and open JF AIBox Bridge on your Android phone or AI Box.
+3. Connect the Android device to the compatible MIB2.5 Wi-Fi network.
+4. Open the app's connection settings and use the available head unit IP detection or manual configuration.
+5. Check the EXLAP connection status and open the vehicle dashboard.
+6. Enable optional Android permissions only for the features you intend to use.
 
-Only install APKs from sources you trust.
+For more information, see [Installation](INSTALLATION.md), [EXLAP Setup](EXLAP_SETUP.md) and [Troubleshooting](TROUBLESHOOTING.md).
 
-## First-Time Setup
+## iPhone / iPad Safari Remote Touchpad
 
-### Connect to MIB2.5
+The app can provide a browser-based Touchpad on a trusted local network. Connect your iPhone/iPad and Android device so they can reach each other, then use the in-app QR code or local address to open the Touchpad in Safari.
 
-1. Open Android Wi-Fi settings.
-2. Connect to the compatible MIB2.5 head unit's Wi-Fi network.
-3. Launch JF AIBox Bridge.
-4. Select **Auto Detect MU1101 IP**, or manually enter the correct head unit IP address.
-5. Check the EXLAP connection status.
-6. Supported vehicle data should appear once the connection is established and the necessary services are available.
+Remote gestures may require Android **Accessibility Service** permission. Screen viewing requires **MediaProjection / screen capture** approval. Availability depends on device and Android version.
 
-A general internet hotspot alone does not provide access to EXLAP vehicle data.
+**Security:** Keep remote-control services on a trusted local network. Do not forward local control ports to the public internet.
 
-### iPhone / iPad Remote Touchpad
+## Permissions and Safety
 
-1. Connect your iPhone/iPad and Android device to a local network where they can communicate.
-2. Open the Wi-Fi / Safari Bridge QR Code page in JF AIBox Bridge.
-3. Scan the Touchpad QR code using your iPhone or iPad.
-4. Open the link in Safari.
-5. Enable the required Android Accessibility service for remote touch control.
-6. Approve Android screen capture if you want to use screen mirroring.
+| Function | Access or permission |
+| --- | --- |
+| Vehicle information | Compatible Wi-Fi and EXLAP connection |
+| Media metadata | Notification access, where required |
+| Remote gestures | Android Accessibility Service |
+| Screen viewing | Android screen capture / MediaProjection |
 
-The Touchpad typically uses port `18777`, while the local dashboard typically uses port `8765`.
+- Do not interact with the application while driving. Configure and test it while safely parked.
+- Remote control and screen capture may expose sensitive information on the Android device.
+- Local HTTP control traffic may not be encrypted; use only trusted networks.
+- This project is not a safety-critical instrument and does not replace the vehicle's original displays or warnings.
 
-These services are intended for trusted local networks only. Do not expose them to the public internet.
-
-## Android Permissions
-
-Different features require different Android permissions.
-
-| Feature | Required Permission |
-|---|---|
-| Vehicle dashboard | Compatible Wi-Fi / EXLAP connection |
-| Music information | Notification Access |
-| Remote Touchpad | Accessibility Service |
-| Screen mirroring | Android Screen Capture / MediaProjection |
-
-You do not need to enable every permission to use the basic vehicle dashboard.
-
-Accessibility can provide extensive control over the Android device. Screen mirroring may expose private information.
-
-Please review [Permissions, Privacy and Safety](PERMISSIONS_AND_SAFETY.md) before enabling these features.
+Read [Permissions and Safety](PERMISSIONS_AND_SAFETY.md) before enabling optional services.
 
 ## Community Appreciation
 
-A special thanks to everyone who has contributed to the research and development of native MIB interface modifications.
+A sincere thank-you to everyone researching and developing **native MIB interface modifications** and generously sharing technical knowledge, tools and public resources.
 
-Many developers have generously shared their knowledge, research, tools, and public resources with the community.
+Those contributions have helped the wider community understand these systems and made independent experiments like this possible. JF AIBox Bridge is not intended to compete with or replace native modifications; it is simply another option to explore while that work continues.
 
-These contributions have been extremely valuable and have helped make projects like JF AIBox Bridge possible.
-
-I truly appreciate the effort everyone has put into exploring and improving the capabilities of Volkswagen Group infotainment systems.
-
-This project is also my small contribution back to the community.
-
-I hope it can be useful to other enthusiasts, and I welcome feedback, suggestions, and contributions.
+Thank you to everyone who shares discoveries, tests ideas and helps other enthusiasts learn.
 
 ## EXLAP Research and Attribution
 
-JF AIBox Bridge uses publicly documented EXLAP reference authentication profiles and research from:
+This project draws on publicly shared EXLAP research, including the [EXLAP MIB2 Object Atlas](https://github.com/ijord/EXLAP-mib2-atlas), whose referenced material is identified under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-**[EXLAP MIB2 Object Atlas](https://github.com/ijord/EXLAP-mib2-atlas)**
-
-The referenced project identifies its material under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-
-The published reference authentication profile values are included as application defaults, so users normally do not need to manually enter EXLAP credentials.
-
-Special thanks to the original researchers and contributors for making this information publicly available.
-
-Please see [EXLAP Attribution](EXLAP_ATTRIBUTION.md) for further details.
-
-The use of this research does not imply official endorsement or guarantee compatibility with any particular vehicle.
-
-## Safety and Privacy
-
-- Use the application and remote controls only while safely parked.
-- Do not interact with the dashboard while driving.
-- Remote control permissions may allow connected local-network clients to operate the Android device.
-- Screen mirroring may expose notifications, messages, passwords, and other private information.
-- Local HTTP connections are not end-to-end encrypted.
-- Never expose ports `8765` or `18777` directly to the internet.
-- This application is not intended to serve as a safety-critical vehicle instrument.
-
-Use the application at your own risk.
+Please review [EXLAP Attribution](EXLAP_ATTRIBUTION.md) for source acknowledgements and details. Attribution to external research does not imply endorsement by its authors or determine the license of this entire application.
 
 ## Documentation
 
-- [Installation and Wi-Fi Setup](INSTALLATION.md)
-- [Android Permissions and Safety](PERMISSIONS_AND_SAFETY.md)
-- [EXLAP Attribution](EXLAP_ATTRIBUTION.md)
+- [Installation Guide](INSTALLATION.md)
 - [EXLAP Setup](EXLAP_SETUP.md)
+- [EXLAP Attribution](EXLAP_ATTRIBUTION.md)
+- [Permissions and Safety](PERMISSIONS_AND_SAFETY.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 - [Release Notes](RELEASE_NOTES.md)
-- [GitHub Publishing Checklist](GITHUB_PUBLISHING.md)
+- [GitHub Publishing Guide](GITHUB_PUBLISHING.md)
 
-## Source Code and Licensing
+## Source Code and Contributions
 
-The source code is publicly available for community inspection, learning, and collaboration.
+The source code is publicly available for inspection and community feedback. **Public source availability alone does not establish an open-source license.** Until an explicit license is added for the original application code, do not assume unrestricted redistribution or relicensing rights.
 
-The repository includes original application code and references to third-party research and resources.
-
-Public availability does not automatically grant permission to redistribute or relicense every component. A license for the original application code has not yet been specified.
-
-The CC BY 4.0 attribution associated with the EXLAP MIB2 Object Atlas applies to the referenced research material and does not automatically apply to the entire JF AIBox Bridge application.
-
-## Feedback and Contributions
-
-Feedback, suggestions, testing results, and contributions are welcome!
-
-If you encounter an issue, please open a GitHub Issue and include relevant information such as:
-
-- Android device or AI Box model
-- Android version
-- MIB2.5 head unit model and firmware
-- JF AIBox Bridge version
-- Network configuration
-- Description of the issue
-
-Please remove passwords, personal information, private tokens, and vehicle identifiers from any shared logs or screenshots.
+Issues, compatibility reports and suggestions are welcome. When reporting a problem, include your Android device, Android version, MIB2.5 model/firmware, app version and a description of the issue. Remove credentials and personal or vehicle-identifying information from logs before sharing them.
 
 ## Disclaimer
 
-JF AIBox Bridge is an independent community project.
-
-It is not affiliated with, sponsored by, or endorsed by Volkswagen, Audi, Škoda, SEAT, or any other vehicle manufacturer.
-
-Compatibility and functionality may vary depending on hardware and software configurations.
+JF AIBox Bridge is an independent community project and is **not affiliated with, sponsored by or endorsed by** Volkswagen, Audi, Škoda, SEAT or any vehicle manufacturer. Compatibility and functionality vary by configuration. Use at your own risk.
 
 ---
 
 **Developed and shared by JF VAG — Taiwan**
 
-*Thanks to everyone contributing to the MIB development community. Keep exploring, sharing, and improving!*
+*Thanks to everyone contributing to the MIB development community.*
