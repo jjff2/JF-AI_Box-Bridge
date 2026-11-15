@@ -1020,10 +1020,138 @@ html body nav.home-sidebar.tabs>button[data-tab] .nav-symbol{
   flex:1 1 65px!important;width:65px!important;max-width:70px!important;
  }
 }
-</style></head><body><main><header class="top"><div class="eyebrow">AIBox Bridge</div><span class="home-clock" id="homeClock"></span><div class="jf-header-right"><div aria-label="Vehicle temperature and voltage" class="jf-top-metrics"><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.28" id="jfOutsideLabel">車外</span><span class="jf-top-reading" id="jfOutsideTemp">—</span></span><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.29" id="jfVoltageLabel">電瓶</span><span class="jf-top-reading" id="jfVoltage">—</span></span></div><div class="live" id="connection"><i class="dot"></i><span id="connectionText">連線中</span></div></div></header><nav aria-label="頁面選單" class="tabs home-sidebar" data-jf-i18n-aria-label="xl.109"><button aria-label="車輛資訊" data-jf-i18n-aria-label="xl.31" data-jf-i18n-title="xl.31" data-tab="data" title="車輛資訊"><span class="nav-symbol"><svg aria-hidden="true" class="jf-car-icon" fill="none" focusable="false" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24" width="28"><path d="M5 11l1.7-5.1A2 2 0 0 1 8.6 4.5h6.8a2 2 0 0 1 1.9 1.4L19 11"></path><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"></path><path d="M6 18v2m12-2v2M6.5 14.5h2m7 0h2"></path></svg></span></button><button aria-label="音樂" data-jf-i18n-aria-label="xl.33" data-jf-i18n-title="xl.33" data-tab="media" title="音樂"><span class="nav-symbol">♫</span></button><button aria-label="設定與連線" data-jf-i18n-aria-label="xl.110" data-jf-i18n-title="xl.110" data-tab="status" title="設定與連線"><span class="nav-symbol">⚙</span></button></nav>
-<section class="page" id="data"><div class="home-layout"><div class="home-vehicle"><div class="home-section-bar"><div class="home-title" data-jf-i18n="xl.31" id="homeVehicleTitle">車輛資訊</div><div class="home-actions"><span class="home-page-label" id="homePageLabel">1 / 1</span><button aria-label="自訂首頁" class="home-icon-btn" id="homeEdit" title="自訂首頁" type="button">✎</button></div></div><div aria-label="九宮格車輛數據" class="home-tiles" data-jf-i18n-aria-label="xl.113" id="homeTiles"></div><div class="home-pager"><button aria-label="上一頁" data-jf-i18n-aria-label="xl.114" id="homePrev" type="button">‹</button><div class="home-dots" id="homeDots"></div><button aria-label="下一頁" data-jf-i18n-aria-label="xl.115" id="homeNext" type="button">›</button></div><div class="home-hint" id="homeHint">左右滑動切換資料頁 · 點選編輯可以調整排列</div></div><div class="home-right"><section class="home-music-panel"><div class="home-section-bar"><div class="home-title" data-jf-i18n="xl.33" id="homeMusicTitle">音樂</div><button aria-label="開啟音樂頁" class="home-icon-btn" data-jf-i18n-aria-label="xl.118" id="homeMusicOpen" type="button">›</button></div><div class="home-music-main"><div class="home-artwork" id="homeArtwork">♫</div><div class="home-track"><div class="home-song-name" id="homeSong">—</div><div class="home-song-artist" id="homeArtist">—</div><div class="home-media-status" id="homeMediaStatus"></div></div></div><div class="home-music-controls"><button aria-label="上一首" data-home-music="prev" data-jf-i18n-aria-label="xl.119" type="button">◀◀</button><button aria-label="播放暫停" class="home-play" data-home-music="play" data-jf-i18n-aria-label="xl.120" type="button">▶ /Ⅱ</button><button aria-label="下一首" data-home-music="next" data-jf-i18n-aria-label="xl.121" type="button">▶▶</button></div></section><section class="home-tpms-panel"><div class="tpms-inline"><div class="sectionHead"><h2 data-i18n="tpmsTitle">四輪胎壓</h2><div class="tpms-select"><label data-i18n="unit" for="pressureUnit">單位</label><select aria-label="胎壓單位" data-jf-i18n-aria-label="xl.124" id="pressureUnit"><option value="bar">bar</option><option value="psi">psi</option></select></div></div><div class="tpms-scene"><div class="tpms-slot" id="tireFL"><div class="wheel-name" data-i18n="FL">左前</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div aria-label="車輛俯視圖，車頭朝上" class="tpms-car" data-jf-i18n-aria-label="xl.127"><svg aria-label="車輛俯視圖" role="img" viewbox="0 0 120 240"><rect fill="#456074" height="214" rx="33" stroke="#86bad6" stroke-width="3" width="86" x="17" y="13"></rect><rect fill="#142735" height="49" rx="12" stroke="#5a829d" stroke-width="2" width="70" x="25" y="48"></rect><rect fill="#142735" height="44" rx="12" stroke="#5a829d" stroke-width="2" width="70" x="25" y="153"></rect><rect fill="#30485c" height="47" rx="12" stroke="#668da6" width="60" x="30" y="101"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelFL" rx="6" width="13" x="4" y="52"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelFR" rx="6" width="13" x="103" y="52"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelRL" rx="6" width="13" x="4" y="158"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelRR" rx="6" width="13" x="103" y="158"></rect><path d="M32 22H88" stroke="#b7d5eb" stroke-linecap="round" stroke-width="4"></path><path d="M34 217H86" stroke="#f47b7b" stroke-linecap="round" stroke-width="4"></path></svg><span data-i18n="front">車頭 ↑</span></div><div class="tpms-slot" id="tireFR"><div class="wheel-name" data-i18n="FR">右前</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div class="tpms-slot" id="tireRL"><div class="wheel-name" data-i18n="RL">左後</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div class="tpms-slot" id="tireRR"><div class="wheel-name" data-i18n="RR">右後</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div></div><div class="tpms-legend" id="tpmsLegend"><span class="legend-normal" data-jf-i18n="xl.42" data-tpms-legend="normal">● 正常</span><span class="legend-low" data-jf-i18n="xl.43" data-tpms-legend="low">● 偏低</span><span class="legend-unknown" data-jf-i18n="xl.44" data-tpms-legend="unknown">● 無資料</span></div><div aria-live="polite" class="tpms-warning" id="tpmsWarning" role="status"></div><p class="muted" id="tpmsNote">—</p><div class="tpms-stale" id="tpmsStale">資料暫未更新</div></div></section></div></div><div class="legacy-data" hidden=""><div id="hero"></div><div id="dataGrid"></div><span id="count"></span><span id="globalAge"></span><span id="telemetryMode"></span><span id="speedSampleRate"></span><button id="resortData"></button><button id="editDashboard"></button><button hidden="" id="resetDashboard"></button><select id="refreshMs"><option value="50">50</option><option value="100">100</option><option value="250">250</option><option value="500">500</option><option value="1000">1000</option></select></div><div class="home-editor-overlay" hidden="" id="homeEditor"><div class="home-editor-dialog"><div class="home-editor-head"><strong data-jf-i18n="xl.46" id="homeEditTitle">自訂首頁數據</strong><button data-jf-i18n="xl.47" id="homeEditorDone" type="button">完成</button></div><p id="homeEditDesc">勾選要顯示的資料，用上下箭頭調整順序。每頁顯示 9 項，自動記住設定。</p><div class="home-editor-tools"><select aria-label="欄位篩選" class="home-editor-filter" data-jf-i18n-aria-label="xl.141" id="homeSupportFilter"><option value="all">全部欄位</option><option value="observed">已有資料</option><option value="uncertain">可能不支援</option></select><button data-jf-i18n="xl.52" id="homeHideUnsupported" type="button">隱藏可能不支援</button><button data-jf-i18n="xl.53" id="homeEditReset" type="button">重設排序</button><button data-jf-i18n="xl.54" id="homeEditAll" type="button">全部顯示</button></div><div class="home-editor-list" id="homeEditorRows"></div></div></div></section><section class="page" hidden="" id="tpms"></section><section class="page" hidden="" id="split"><div class="split-shell"><div class="split-telemetry"><div class="split-heading"><strong data-jf-i18n="xl.55" id="splitDataHeading">即時車輛資訊</strong><span class="muted" id="splitDataState">—</span><button class="split-config-toggle" data-jf-i18n="xl.56" id="splitConfigure" type="button">✎ 自訂</button></div><div class="split-custom-panel" id="splitCustomPanel"><div class="split-config-help" data-jf-i18n="xl.57" id="splitEditHelp">選擇分割畫面顯示的欄位，使用 ↑ ↓ 調整順序。設定會記住。</div><div class="split-custom-scroll" id="splitCustomRows"></div><button data-jf-i18n="xl.58" id="splitReset" type="button">↺ 重設</button></div><div class="split-metrics" id="splitMetrics"></div><div class="split-tpms"><strong data-jf-i18n="xl.34" id="splitTpmsHeading">四輪胎壓</strong><div class="split-tires"><div class="split-tire" id="splitTireFL">—</div><div class="split-tire" id="splitTireFR">—</div><div class="split-tire" id="splitTireRL">—</div><div class="split-tire" id="splitTireRR">—</div></div><div class="muted" id="splitTireWarning" style="margin-top:7px"></div></div><div class="split-map-note" data-jf-i18n="xl.59" id="splitLiveNote">車輛資訊持續更新；地圖需要 AI Box 具備網際網路連線。</div></div><div class="split-map-panel"><div class="split-heading"><strong data-jf-i18n="xl.60" id="splitMapHeading">地圖</strong><button data-jf-i18n="xl.61" id="splitOpenGoogle" type="button">開啟 Google Maps App</button></div><div class="split-map-settings"><label data-jf-i18n="xl.62" for="splitMapProvider" id="splitMapProviderLabel">地圖來源</label><select id="splitMapProvider"><option value="osm">OpenStreetMap</option><option value="google">Google Maps Embed</option></select></div><div class="split-map-keyrow" hidden="" id="splitGoogleKeyRow"><input aria-label="Google Maps Embed API Key" autocomplete="off" id="splitGoogleKey" placeholder="Google Maps Embed API Key" spellcheck="false" type="password"/><button data-jf-i18n="xl.63" id="splitGoogleSave" type="button">儲存並載入</button><button data-jf-i18n="xl.64" id="splitGoogleClear" type="button">清除 Key</button></div><div class="split-config-help" id="splitProviderNote"></div><div hidden="" id="splitMapFrame"></div><div class="split-map-note" data-jf-i18n="xl.65" id="splitMapNote">可選 OpenStreetMap 或 Google Maps Embed（需個人 API Key）。不是完整 Google Maps 導航；僅在安全停車時操作地圖。</div></div></div></section>
+
+/* V7: two narrowly scoped improvements; preserve V6 shared header and navigation. */
+:root{--jf-font-scale:1.1}
+/* Use remaining TPMS width for readings, not decorative padding. */
+body #data .home-tpms-panel{padding:7px 8px!important}
+body #data .home-tpms-panel .tpms-inline{padding:0!important;margin:0!important}
+body #data .home-tpms-panel .sectionHead{margin:0 0 4px!important;padding:0!important}
+body #data .home-tpms-panel .tpms-scene{width:100%!important;max-width:none!important;gap:4px!important;margin:0!important;grid-template-columns:minmax(0,1fr) minmax(48px,20%) minmax(0,1fr)!important}
+body #data .home-tpms-panel .tpms-slot{padding:5px 5px!important;min-width:0!important;margin:0!important;border-radius:9px!important}
+body #data .home-tpms-panel .tpms-car{min-width:0!important;gap:2px!important}
+body #data .home-tpms-panel .tpms-car svg{width:100%!important;max-width:92px!important;min-height:0!important}
+body #data .home-tpms-panel .wheel-pressure{margin:3px 0!important}
+body #data .home-tpms-panel .tpms-legend{margin:3px 0 0!important;gap:3px 7px!important}
+body #data .home-tpms-panel #tpmsNote{margin:2px 0 0!important}
+/* Slider and live percentage */
+#status .font-setting .jf-font-slider-row{display:flex;align-items:center;gap:10px;width:100%;min-width:0}
+#status .font-setting input[type=range]{flex:1 1 auto;min-width:45px;width:100%;height:32px;accent-color:var(--accent);cursor:pointer;touch-action:pan-x}
+#status .font-setting .jf-font-edge{font-size:12px;font-weight:750;color:var(--muted);flex-shrink:0}
+#status .font-setting output{min-width:45px;font-size:13px;font-weight:750;color:var(--text);text-align:right;font-variant-numeric:tabular-nums}
+/* Explicit type scale: overrides historic fixed font sizes, but not dimensions. */
+html body .home-title,html body #data .home-title{font-size:calc(17px * var(--jf-font-scale))!important}
+html body .home-tile .tile-label{font-size:calc(11px * var(--jf-font-scale))!important;line-height:1.25!important;white-space:normal!important;overflow-wrap:anywhere!important}
+html body .home-tile .tile-value{font-size:clamp(15px,calc(27px * var(--jf-font-scale)),45px)!important;line-height:1.1!important}
+html body .home-tile .tile-unit{font-size:calc(10px * var(--jf-font-scale))!important}
+html body .home-tile .tile-freshness{font-size:calc(9px * var(--jf-font-scale))!important}
+html body #data .home-tpms-panel .wheel-name{font-size:calc(11px * var(--jf-font-scale))!important;line-height:1.22!important;white-space:normal!important;overflow-wrap:anywhere!important}
+html body #data .home-tpms-panel .wheel-pressure{font-size:clamp(14px,calc(19px * var(--jf-font-scale)),33px)!important;line-height:1.1!important}
+html body #data .home-tpms-panel .wheel-note{font-size:calc(10px * var(--jf-font-scale))!important;line-height:1.25!important;white-space:normal!important}
+html body #data .home-tpms-panel .sectionHead h2{font-size:calc(14px * var(--jf-font-scale))!important}
+html body .home-song-name{font-size:calc(14px * var(--jf-font-scale))!important}
+html body .home-song-artist,html body .home-media-status{font-size:calc(11px * var(--jf-font-scale))!important}
+html body #media .songtitle{font-size:clamp(18px,calc(25px * var(--jf-font-scale)),42px)!important}
+html body #media .songartist{font-size:calc(16px * var(--jf-font-scale))!important}
+html body #status .jf-setting-panel>summary{font-size:calc(15px * var(--jf-font-scale))!important}
+html body #status .jf-settings-tip,html body #status .jf-setting-panel p{font-size:calc(12px * var(--jf-font-scale))!important}
+html body #status .jf-setting-panel label{font-size:calc(12px * var(--jf-font-scale))!important}
+html body #status .jf-setting-panel button,html body #status .jf-setting-panel select{font-size:calc(12px * var(--jf-font-scale))!important}
+@media (orientation:landscape) and (max-height:720px){
+ html body #data .home-tpms-panel{padding:4px 5px!important}
+ html body #data .home-tpms-panel .tpms-scene{gap:3px!important;grid-template-columns:minmax(0,1fr) minmax(36px,20%) minmax(0,1fr)!important}
+ html body #data .home-tpms-panel .tpms-slot{padding:3px!important}
+ html body .home-tile .tile-value{font-size:clamp(13px,calc(20px * var(--jf-font-scale)),30px)!important}
+ html body .home-tile .tile-label{font-size:clamp(9px,calc(10px * var(--jf-font-scale)),15px)!important}
+ html body #data .home-tpms-panel .wheel-pressure{font-size:clamp(12px,calc(15px * var(--jf-font-scale)),26px)!important}
+ html body #data .home-tpms-panel .wheel-name{font-size:clamp(9px,calc(10px * var(--jf-font-scale)),15px)!important}
+}
+@media (max-width:700px) and (orientation:portrait){
+ html body #data .home-tpms-panel .tpms-scene{grid-template-columns:minmax(0,1fr) minmax(60px,20%) minmax(0,1fr)!important}
+ html body #data .home-tpms-panel .tpms-slot{padding:6px 5px!important}
+ html body .home-tile .tile-value{font-size:clamp(16px,calc(21px * var(--jf-font-scale)),33px)!important}
+}
+
+/* V8: Dashboard-only right rail, no changes to shared header / sidebar */
+#data .jf-side-toggle{appearance:none;border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:9px;padding:4px 9px;min-height:30px;min-width:34px;font-size:20px;line-height:1;cursor:pointer;flex:0 0 auto}
+#data .jf-side-toggle:focus-visible,#data .jf-side-rail button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#data .jf-side-rail{display:none;min-width:0}
+#data .jf-side-rail[hidden]{display:none!important}
+#data .home-layout.jf-side-collapsed,
+html body.jf-home-landscape #data .home-layout.jf-side-collapsed{
+  grid-template-columns:minmax(0,1fr) 56px!important;
+  gap:8px!important;
+}
+#data .home-layout.jf-side-collapsed .home-right,
+html body.jf-home-landscape #data .home-layout.jf-side-collapsed .home-right{display:none!important}
+#data .home-layout.jf-side-collapsed .jf-side-rail,
+html body.jf-home-landscape #data .home-layout.jf-side-collapsed .jf-side-rail{
+  display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;
+  gap:12px!important;background:var(--card);border:1px solid var(--border);border-radius:15px;
+  padding:9px 4px;min-height:0;align-self:stretch;overflow:visible;
+}
+#data .jf-side-rail button{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:43px;min-height:48px;padding:4px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font-size:23px;cursor:pointer}
+#data .jf-side-rail #jfSideExpand{background:var(--accent);color:#fff;border-color:var(--accent)}
+/* Give metric readings a *real* scaling range; values are fit by JS to each card's width. */
+html body #data .home-tile .tile-reading{min-width:0!important;display:flex!important;align-items:baseline!important;gap:3px!important;overflow:hidden!important}
+html body #data .home-tile .tile-value{font-size:var(--jf-value-fit,calc(27px * var(--jf-font-scale)))!important;max-width:100%!important;min-width:0!important;line-height:1.08!important;letter-spacing:-.35px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;flex:0 1 auto!important}
+html body #data .home-tile .tile-unit{flex:0 0 auto!important;white-space:nowrap!important}
+@media (orientation:landscape) and (max-height:720px){
+ html body #data .home-tile .tile-value{font-size:var(--jf-value-fit,calc(25px * var(--jf-font-scale)))!important}
+}
+@media (max-width:700px) and (orientation:portrait){
+ #data .home-layout.jf-side-collapsed,html body.jf-home-landscape #data .home-layout.jf-side-collapsed{grid-template-columns:minmax(0,1fr) 44px!important;gap:5px!important}
+ #data .jf-side-rail button{width:34px;min-height:43px;font-size:21px}
+ #data .jf-side-rail{padding:7px 3px!important}
+ #data .jf-side-toggle{font-size:17px;padding:4px 7px;min-width:29px}
+ /* Narrow phones: keep vehicle cards full-width, compact controls into a horizontal rail. */
+ #data .home-layout.jf-side-collapsed,html body.jf-home-landscape #data .home-layout.jf-side-collapsed{grid-template-columns:minmax(0,1fr)!important}
+ #data .home-layout.jf-side-collapsed .jf-side-rail{flex-direction:row!important;justify-content:flex-start!important;align-self:auto!important;min-height:48px!important;gap:8px!important}
+ html body #data .home-tile .tile-value{font-size:var(--jf-value-fit,calc(21px * var(--jf-font-scale)))!important}
+}
+</style>
+<style id="jf-v82-fontscale-priority-fix">
+/* V8.2: the vehicle panel MUST consume the slider's shared font scale.
+   Use one cascade winner across standard, jf-home-landscape and short-screen layouts. */
+html body #data .home-tiles .home-tile .tile-label{
+ font-size:clamp(10px,calc(13px * var(--jf-font-scale,1.1)),22px)!important;
+ line-height:1.23!important;max-width:100%;overflow-wrap:anywhere!important;
+ display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;
+ overflow:hidden!important;
+}
+html body #data .home-tiles .home-tile .tile-value{
+ font-size:clamp(12px,var(--jf-value-fit,calc(29px * var(--jf-font-scale,1.1))),48px)!important;
+ line-height:1.1!important;min-width:0;max-width:100%;white-space:nowrap!important;
+ overflow:hidden!important;text-overflow:ellipsis!important;font-variant-numeric:tabular-nums;
+}
+html body #data .home-tiles .home-tile .tile-unit{
+ font-size:clamp(9px,calc(11px * var(--jf-font-scale,1.1)),18px)!important;
+}
+html body #data .home-tiles .home-tile .tile-freshness{
+ font-size:clamp(8px,calc(9px * var(--jf-font-scale,1.1)),14px)!important;
+}
+@media (orientation:landscape) and (max-height:720px){
+ html body #data .home-tiles .home-tile .tile-label{font-size:clamp(9px,calc(11px * var(--jf-font-scale,1.1)),18px)!important}
+ html body #data .home-tiles .home-tile .tile-value{font-size:clamp(12px,var(--jf-value-fit,calc(25px * var(--jf-font-scale,1.1))),38px)!important}
+ html body #data .home-tiles .home-tile .tile-unit{font-size:clamp(8px,calc(10px * var(--jf-font-scale,1.1)),15px)!important}
+}
+@media (max-width:700px) and (orientation:portrait){
+ html body #data .home-tiles .home-tile .tile-label{font-size:clamp(10px,calc(11.5px * var(--jf-font-scale,1.1)),18px)!important}
+ html body #data .home-tiles .home-tile .tile-value{font-size:clamp(12px,var(--jf-value-fit,calc(21px * var(--jf-font-scale,1.1))),33px)!important}
+}
+#jf-font-live-preview{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0 0;padding:9px 12px;background:var(--bg);border:1px solid var(--border);border-radius:10px;min-width:0}
+#jf-font-live-preview .jf-preview-label{font-size:12px;color:var(--muted);flex:0 0 auto}
+#jf-font-live-preview .jf-preview-reading{font-size:clamp(16px,calc(29px * var(--jf-font-scale,1.1)),48px);font-weight:800;line-height:1.1;white-space:nowrap;min-width:0;font-variant-numeric:tabular-nums}
+#jf-font-live-preview .jf-preview-reading small{font-size:.4em;color:var(--muted)}
+</style>
+</head><body><main><header class="top"><div class="eyebrow">AIBox Bridge</div><span class="home-clock" id="homeClock"></span><div class="jf-header-right"><div aria-label="Vehicle temperature and voltage" class="jf-top-metrics"><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.28" id="jfOutsideLabel">車外</span><span class="jf-top-reading" id="jfOutsideTemp">—</span></span><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.29" id="jfVoltageLabel">電瓶</span><span class="jf-top-reading" id="jfVoltage">—</span></span></div><div class="live" id="connection"><i class="dot"></i><span id="connectionText">連線中</span></div></div></header><nav aria-label="頁面選單" class="tabs home-sidebar" data-jf-i18n-aria-label="xl.109"><button aria-label="車輛資訊" data-jf-i18n-aria-label="xl.31" data-jf-i18n-title="xl.31" data-tab="data" title="車輛資訊"><span class="nav-symbol"><svg aria-hidden="true" class="jf-car-icon" fill="none" focusable="false" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24" width="28"><path d="M5 11l1.7-5.1A2 2 0 0 1 8.6 4.5h6.8a2 2 0 0 1 1.9 1.4L19 11"></path><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"></path><path d="M6 18v2m12-2v2M6.5 14.5h2m7 0h2"></path></svg></span></button><button aria-label="音樂" data-jf-i18n-aria-label="xl.33" data-jf-i18n-title="xl.33" data-tab="media" title="音樂"><span class="nav-symbol">♫</span></button><button aria-label="設定與連線" data-jf-i18n-aria-label="xl.110" data-jf-i18n-title="xl.110" data-tab="status" title="設定與連線"><span class="nav-symbol">⚙</span></button></nav>
+<section class="page" id="data"><div class="home-layout"><div class="home-vehicle"><div class="home-section-bar"><div class="home-title" data-jf-i18n="xl.31" id="homeVehicleTitle">車輛資訊</div><div class="home-actions"><button type="button" class="jf-side-toggle" id="jfSideCollapse" aria-controls="jfHomeRight" aria-expanded="true" title="收合音樂與胎壓">⇥</button><span class="home-page-label" id="homePageLabel">1 / 1</span><button aria-label="自訂首頁" class="home-icon-btn" id="homeEdit" title="自訂首頁" type="button">✎</button></div></div><div aria-label="九宮格車輛數據" class="home-tiles" data-jf-i18n-aria-label="xl.113" id="homeTiles"></div><div class="home-pager"><button aria-label="上一頁" data-jf-i18n-aria-label="xl.114" id="homePrev" type="button">‹</button><div class="home-dots" id="homeDots"></div><button aria-label="下一頁" data-jf-i18n-aria-label="xl.115" id="homeNext" type="button">›</button></div><div class="home-hint" id="homeHint">左右滑動切換資料頁 · 點選編輯可以調整排列</div></div><div class="home-right" id="jfHomeRight"><section class="home-music-panel"><div class="home-section-bar"><div class="home-title" data-jf-i18n="xl.33" id="homeMusicTitle">音樂</div><button aria-label="開啟音樂頁" class="home-icon-btn" data-jf-i18n-aria-label="xl.118" id="homeMusicOpen" type="button">›</button></div><div class="home-music-main"><div class="home-artwork" id="homeArtwork">♫</div><div class="home-track"><div class="home-song-name" id="homeSong">—</div><div class="home-song-artist" id="homeArtist">—</div><div class="home-media-status" id="homeMediaStatus"></div></div></div><div class="home-music-controls"><button aria-label="上一首" data-home-music="prev" data-jf-i18n-aria-label="xl.119" type="button">◀◀</button><button aria-label="播放暫停" class="home-play" data-home-music="play" data-jf-i18n-aria-label="xl.120" type="button">▶ /Ⅱ</button><button aria-label="下一首" data-home-music="next" data-jf-i18n-aria-label="xl.121" type="button">▶▶</button></div></section><section class="home-tpms-panel"><div class="tpms-inline"><div class="sectionHead"><h2 data-i18n="tpmsTitle">四輪胎壓</h2><div class="tpms-select"><label data-i18n="unit" for="pressureUnit">單位</label><select aria-label="胎壓單位" data-jf-i18n-aria-label="xl.124" id="pressureUnit"><option value="bar">bar</option><option value="psi">psi</option></select></div></div><div class="tpms-scene"><div class="tpms-slot" id="tireFL"><div class="wheel-name" data-i18n="FL">左前</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div aria-label="車輛俯視圖，車頭朝上" class="tpms-car" data-jf-i18n-aria-label="xl.127"><svg aria-label="車輛俯視圖" role="img" viewbox="0 0 120 240"><rect fill="#456074" height="214" rx="33" stroke="#86bad6" stroke-width="3" width="86" x="17" y="13"></rect><rect fill="#142735" height="49" rx="12" stroke="#5a829d" stroke-width="2" width="70" x="25" y="48"></rect><rect fill="#142735" height="44" rx="12" stroke="#5a829d" stroke-width="2" width="70" x="25" y="153"></rect><rect fill="#30485c" height="47" rx="12" stroke="#668da6" width="60" x="30" y="101"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelFL" rx="6" width="13" x="4" y="52"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelFR" rx="6" width="13" x="103" y="52"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelRL" rx="6" width="13" x="4" y="158"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelRR" rx="6" width="13" x="103" y="158"></rect><path d="M32 22H88" stroke="#b7d5eb" stroke-linecap="round" stroke-width="4"></path><path d="M34 217H86" stroke="#f47b7b" stroke-linecap="round" stroke-width="4"></path></svg><span data-i18n="front">車頭 ↑</span></div><div class="tpms-slot" id="tireFR"><div class="wheel-name" data-i18n="FR">右前</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div class="tpms-slot" id="tireRL"><div class="wheel-name" data-i18n="RL">左後</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div class="tpms-slot" id="tireRR"><div class="wheel-name" data-i18n="RR">右後</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div></div><div class="tpms-legend" id="tpmsLegend"><span class="legend-normal" data-jf-i18n="xl.42" data-tpms-legend="normal">● 正常</span><span class="legend-low" data-jf-i18n="xl.43" data-tpms-legend="low">● 偏低</span><span class="legend-unknown" data-jf-i18n="xl.44" data-tpms-legend="unknown">● 無資料</span></div><div aria-live="polite" class="tpms-warning" id="tpmsWarning" role="status"></div><p class="muted" id="tpmsNote">—</p><div class="tpms-stale" id="tpmsStale">資料暫未更新</div></div></section></div><aside id="jfSideRail" class="jf-side-rail" aria-label="音樂與胎壓快捷工具列" hidden>
+<button id="jfSideExpand" type="button" aria-controls="jfHomeRight" aria-expanded="false" title="展開音樂與胎壓">⇤</button>
+<button id="jfRailMusic" type="button" aria-label="展開右側音樂與胎壓（不切換頁面）" title="展開右側面板">♫</button>
+<button id="jfRailTires" type="button" aria-label="展開右側音樂與胎壓（不切換頁面）" title="展開右側面板">◉</button>
+</aside></div><div class="legacy-data" hidden=""><div id="hero"></div><div id="dataGrid"></div><span id="count"></span><span id="globalAge"></span><span id="telemetryMode"></span><span id="speedSampleRate"></span><button id="resortData"></button><button id="editDashboard"></button><button hidden="" id="resetDashboard"></button><select id="refreshMs"><option value="50">50</option><option value="100">100</option><option value="250">250</option><option value="500">500</option><option value="1000">1000</option></select></div><div class="home-editor-overlay" hidden="" id="homeEditor"><div class="home-editor-dialog"><div class="home-editor-head"><strong data-jf-i18n="xl.46" id="homeEditTitle">自訂首頁數據</strong><button data-jf-i18n="xl.47" id="homeEditorDone" type="button">完成</button></div><p id="homeEditDesc">勾選要顯示的資料，用上下箭頭調整順序。每頁顯示 9 項，自動記住設定。</p><div class="home-editor-tools"><select aria-label="欄位篩選" class="home-editor-filter" data-jf-i18n-aria-label="xl.141" id="homeSupportFilter"><option value="all">全部欄位</option><option value="observed">已有資料</option><option value="uncertain">可能不支援</option></select><button data-jf-i18n="xl.52" id="homeHideUnsupported" type="button">隱藏可能不支援</button><button data-jf-i18n="xl.53" id="homeEditReset" type="button">重設排序</button><button data-jf-i18n="xl.54" id="homeEditAll" type="button">全部顯示</button></div><div class="home-editor-list" id="homeEditorRows"></div></div></div></section><section class="page" hidden="" id="tpms"></section><section class="page" hidden="" id="split"><div class="split-shell"><div class="split-telemetry"><div class="split-heading"><strong data-jf-i18n="xl.55" id="splitDataHeading">即時車輛資訊</strong><span class="muted" id="splitDataState">—</span><button class="split-config-toggle" data-jf-i18n="xl.56" id="splitConfigure" type="button">✎ 自訂</button></div><div class="split-custom-panel" id="splitCustomPanel"><div class="split-config-help" data-jf-i18n="xl.57" id="splitEditHelp">選擇分割畫面顯示的欄位，使用 ↑ ↓ 調整順序。設定會記住。</div><div class="split-custom-scroll" id="splitCustomRows"></div><button data-jf-i18n="xl.58" id="splitReset" type="button">↺ 重設</button></div><div class="split-metrics" id="splitMetrics"></div><div class="split-tpms"><strong data-jf-i18n="xl.34" id="splitTpmsHeading">四輪胎壓</strong><div class="split-tires"><div class="split-tire" id="splitTireFL">—</div><div class="split-tire" id="splitTireFR">—</div><div class="split-tire" id="splitTireRL">—</div><div class="split-tire" id="splitTireRR">—</div></div><div class="muted" id="splitTireWarning" style="margin-top:7px"></div></div><div class="split-map-note" data-jf-i18n="xl.59" id="splitLiveNote">車輛資訊持續更新；地圖需要 AI Box 具備網際網路連線。</div></div><div class="split-map-panel"><div class="split-heading"><strong data-jf-i18n="xl.60" id="splitMapHeading">地圖</strong><button data-jf-i18n="xl.61" id="splitOpenGoogle" type="button">開啟 Google Maps App</button></div><div class="split-map-settings"><label data-jf-i18n="xl.62" for="splitMapProvider" id="splitMapProviderLabel">地圖來源</label><select id="splitMapProvider"><option value="osm">OpenStreetMap</option><option value="google">Google Maps Embed</option></select></div><div class="split-map-keyrow" hidden="" id="splitGoogleKeyRow"><input aria-label="Google Maps Embed API Key" autocomplete="off" id="splitGoogleKey" placeholder="Google Maps Embed API Key" spellcheck="false" type="password"/><button data-jf-i18n="xl.63" id="splitGoogleSave" type="button">儲存並載入</button><button data-jf-i18n="xl.64" id="splitGoogleClear" type="button">清除 Key</button></div><div class="split-config-help" id="splitProviderNote"></div><div hidden="" id="splitMapFrame"></div><div class="split-map-note" data-jf-i18n="xl.65" id="splitMapNote">可選 OpenStreetMap 或 Google Maps Embed（需個人 API Key）。不是完整 Google Maps 導航；僅在安全停車時操作地圖。</div></div></div></section>
 <section class="page" id="media"><div class="nowplaying"><div class="compactTitle"><span data-jf-i18n="home.audio" id="autoAudioHeading">自動音源</span> <span class="sourceSelect" hidden=""><button data-source="android" type="button">AI Box</button><button data-source="vehicle" type="button">MU1101 <span data-i18n="vehicle">原車</span></button></span></div><div aria-label="音樂封面" class="albumart" data-jf-i18n-aria-label="xl.161" id="albumArt"><span id="albumPlaceholder">♫</span><img alt="" hidden="" id="albumImage"/></div><div class="song"><div class="eyebrow" data-i18n="playing">正在播放</div><div class="songtitle" id="songTitle">—</div><div class="songartist" id="songArtist">—</div><div class="songalbum" id="songAlbum"></div><div class="jf-media-app" id="jfMediaApp"></div><div aria-live="polite" class="media-status" id="mediaStatus"></div><button class="grant-media" data-jf-i18n="xl.69" hidden="" id="grantMedia" type="button">授權讀取 AI Box 播放資訊</button></div></div><div class="playerControls"><div class="jf-media-touch-entry"><a aria-label="開啟 AI Box Touchpad" data-jf-i18n-aria-label="xl.164" href="#" id="jf-media-touch-link">⌁ Touchpad</a></div><div class="transport"><button aria-label="上一首" data-jf-i18n-aria-label="xl.119" data-music="prev" type="button">⏮</button><button aria-label="播放或暫停" class="mainplay" data-jf-i18n-aria-label="xl.165" data-music="play" type="button">⏯</button><button aria-label="下一首" data-jf-i18n-aria-label="xl.121" data-music="next" type="button">⏭</button></div><div class="volumeControls"><label class="jf-volume-label"><span data-jf-i18n="media.vehicleVolume">原車音量</span><span class="volread" id="volumeCurrent">—</span><input aria-label="原車音量滑桿" data-jf-i18n-aria-label="xl.167" id="jfVehicleVolume" max="30" min="0" step="1" type="range" value="15"/><span class="muted" id="muteCurrent">音量</span></label><button aria-label="靜音" data-jf-i18n-aria-label="xl.169" data-music="mute" type="button">🔇</button></div></div><div class="controlToast" id="controlToast" role="status"></div><h2 data-i18n="audioInfo">音訊資訊</h2><div class="grid" id="mediaGrid"></div></section>
-<section class="page" id="status"><div class="quick-settings" id="languageSettings"><div class="language-setting"><label data-i18n="language" for="languageSelect">語言</label><select id="languageSelect"><option value="auto">自動（系統語言）</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="ru">Русский</option><option value="pt">Português</option></select></div><select aria-label="Theme (internal state)" hidden="" id="themeSelect" tabindex="-1"><option data-i18n="nightMode" value="night">夜晚模式</option><option data-i18n="dayMode" value="day">白天模式</option></select><div class="font-setting"><label data-jf-i18n="xl.79" for="fontSizeSelect" id="fontSizeLabel">字體大小</label><select aria-label="Dashboard text size" id="fontSizeSelect"><option value="small">小</option><option value="medium">中</option><option value="large">大</option><option value="xlarge">超大</option></select></div></div><div class="jf-media-test" style="border:1px solid var(--border);border-radius:10px;padding:10px;margin:9px 0;background:var(--card);display:flex;flex-wrap:wrap;align-items:center;gap:10px"><div style="flex:1;min-width:190px"><strong data-jf-i18n="xl.81">原車媒體 EXLAP（隔離測試）</strong><div class="muted" data-jf-i18n="xl.82" style="font-size:12px">關閉：仍可讀取車速、胎壓和 Android 音樂；不登入原車媒體、不讀取原車媒體欄位。開啟：恢復原車音樂資訊與控制。</div><div class="muted" id="mediaIsolationState">讀取設定中…</div></div><button id="mediaIsolationToggle" style="min-width:110px" type="button">讀取中…</button></div><div class="bridgebar"><div><strong>Bridge</strong><div class="muted" id="bridgeState">檢查連線中</div></div><div class="bridgeactions"><button data-i18n="start" id="bridgeStart" type="button">啟動</button><button data-i18n="stop" id="bridgeStop" type="button">停止</button><button id="bridgeQr" type="button">QR Code</button></div></div><div aria-live="polite" class="muted" id="bridgeFeedback"></div><details class="jf-health-details" id="jfHealthDetails"><summary data-jf-i18n="xl.88" id="jfHealthTitle">連線健康資訊</summary><div class="jf-health-grid" id="jfHealthGrid"></div></details><details class="connectDetails" id="connectionExtra"><summary data-i18n="details">連線詳細資訊及手機連結</summary><div class="grid" id="statusGrid"></div><a id="share"></a></details><details class="connectDetails advanced-settings" id="advancedTools"><summary data-i18n="advancedTools">進階工具（診斷・備份）</summary><div class="diagnostics-panel"><strong data-i18n="diagTitle">MU1101 相容性檢測</strong><p class="muted" data-i18n="diagReadOnly">唯讀檢查</p><button data-i18n="diagRun" id="diagRun" type="button">檢查相容性</button><button data-i18n="diagExport" disabled="" id="diagSave" type="button">匯出 JSON</button><pre data-i18n="diagNotRun" id="diagResult">尚未執行</pre></div><details class="connectDetails" id="settingsBackup"><summary data-i18n="settingsBackup">備份與還原儀表板設定</summary><p class="muted" data-i18n="backupHelp">只包含介面偏好，不包含密碼或車輛資料。</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button data-i18n="backupGenerate" id="backupGenerate" type="button">產生設定備份</button><button data-i18n="backupRestore" id="backupRestore" type="button">套用設定備份</button></div><textarea aria-label="JSON settings backup" id="backupContents" rows="4" spellcheck="false" style="box-sizing:border-box;width:100%;max-width:100%;margin-top:7px;border-radius:8px;padding:9px;background:var(--panel,#182633);color:var(--text,#f0f7ff);border:1px solid #7293a7"></textarea><p aria-live="polite" class="muted" id="backupFeedback"></p></details></details></section><footer data-i18n="parked">停車時使用</footer></main><script>
+<section class="page" id="status"><div class="quick-settings" id="languageSettings"><div class="language-setting"><label data-i18n="language" for="languageSelect">語言</label><select id="languageSelect"><option value="auto">自動（系統語言）</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="ru">Русский</option><option value="pt">Português</option></select></div><select aria-label="Theme (internal state)" hidden="" id="themeSelect" tabindex="-1"><option data-i18n="nightMode" value="night">夜晚模式</option><option data-i18n="dayMode" value="day">白天模式</option></select><div class="font-setting"><label data-jf-i18n="xl.79" for="fontSizeSelect" id="fontSizeLabel">字體大小</label><div class="jf-font-slider-row"><span class="jf-font-edge" aria-hidden="true">A−</span><input type="range" id="fontSizeSelect" min="80" max="160" step="5" value="110" aria-label="字體大小調整"><span class="jf-font-edge" aria-hidden="true">A+</span><output id="jfFontSizeValue" for="fontSizeSelect">110%</output></div></div></div><div class="jf-media-test" style="border:1px solid var(--border);border-radius:10px;padding:10px;margin:9px 0;background:var(--card);display:flex;flex-wrap:wrap;align-items:center;gap:10px"><div style="flex:1;min-width:190px"><strong data-jf-i18n="xl.81">原車媒體 EXLAP（隔離測試）</strong><div class="muted" data-jf-i18n="xl.82" style="font-size:12px">關閉：仍可讀取車速、胎壓和 Android 音樂；不登入原車媒體、不讀取原車媒體欄位。開啟：恢復原車音樂資訊與控制。</div><div class="muted" id="mediaIsolationState">讀取設定中…</div></div><button id="mediaIsolationToggle" style="min-width:110px" type="button">讀取中…</button></div><div class="bridgebar"><div><strong>Bridge</strong><div class="muted" id="bridgeState">檢查連線中</div></div><div class="bridgeactions"><button data-i18n="start" id="bridgeStart" type="button">啟動</button><button data-i18n="stop" id="bridgeStop" type="button">停止</button><button id="bridgeQr" type="button">QR Code</button></div></div><div aria-live="polite" class="muted" id="bridgeFeedback"></div><details class="jf-health-details" id="jfHealthDetails"><summary data-jf-i18n="xl.88" id="jfHealthTitle">連線健康資訊</summary><div class="jf-health-grid" id="jfHealthGrid"></div></details><details class="connectDetails" id="connectionExtra"><summary data-i18n="details">連線詳細資訊及手機連結</summary><div class="grid" id="statusGrid"></div><a id="share"></a></details><details class="connectDetails advanced-settings" id="advancedTools"><summary data-i18n="advancedTools">進階工具（診斷・備份）</summary><div class="diagnostics-panel"><strong data-i18n="diagTitle">MU1101 相容性檢測</strong><p class="muted" data-i18n="diagReadOnly">唯讀檢查</p><button data-i18n="diagRun" id="diagRun" type="button">檢查相容性</button><button data-i18n="diagExport" disabled="" id="diagSave" type="button">匯出 JSON</button><pre data-i18n="diagNotRun" id="diagResult">尚未執行</pre></div><details class="connectDetails" id="settingsBackup"><summary data-i18n="settingsBackup">備份與還原儀表板設定</summary><p class="muted" data-i18n="backupHelp">只包含介面偏好，不包含密碼或車輛資料。</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button data-i18n="backupGenerate" id="backupGenerate" type="button">產生設定備份</button><button data-i18n="backupRestore" id="backupRestore" type="button">套用設定備份</button></div><textarea aria-label="JSON settings backup" id="backupContents" rows="4" spellcheck="false" style="box-sizing:border-box;width:100%;max-width:100%;margin-top:7px;border-radius:8px;padding:9px;background:var(--panel,#182633);color:var(--text,#f0f7ff);border:1px solid #7293a7"></textarea><p aria-live="polite" class="muted" id="backupFeedback"></p></details></details></section><footer data-i18n="parked">停車時使用</footer></main><script>
 const names={"coolantTemperature": "冷卻水溫", "unitTemperature": "溫度單位", "recommendedGear": "建議檔位", "tankLevelPrimary": "主要油箱油量", "powermeter": "功率表", "currentConsumptionSecondary": "次要即時耗能", "wheelAngle": "方向盤角度", "accIsActive": "ACC 啟用", "currentConsumptionPrimary": "主要即時油耗", "batteryVoltage": "12V 電瓶電壓", "serviceOil": "機油保養", "reverseGear": "倒車檔", "relChargingAirPressure": "相對增壓壓力", "outsideTemperature": "車外溫度", "longTermConsumptionPrimary": "長期平均油耗", "shortTermConsumptionSecondary": "次要短期油耗", "combustionEngineDisplacement": "引擎排氣量", "oilLevel": "機油液位", "driverIsBraking": "煞車操作", "engineTypes": "動力種類", "gearTransmissionMode": "變速箱模式", "blinkingState": "方向燈狀態", "hevOperationMode": "油電運作模式", "fuelLevelState": "油量狀態", "tyreStates": "輪胎狀態", "currentTorque": "目前扭力", "absChargingAirPressure": "絕對增壓壓力", "vehicleSpeed": "車速", "parkingBrake": "駐車煞車", "longitudinalAcceleration": "縱向加速度", "doorState": "車門狀態", "cycleConsumptionSecondary": "次要單趟油耗", "recuperationLevel": "動能回收等級", "tankLevelSecondary": "次要油箱油量", "lateralAcceleration": "橫向加速度", "unitVolume": "容積單位", "consumptionLongTermGeneral": "長期平均消耗", "fuelWarningSecondaryTank": "次要油箱警告", "currentOutputPower": "目前輸出功率", "suspensionProfile": "懸吊設定", "suspensionStates": "懸吊狀態", "dayMilage": "單日里程", "tyrePressures": "輪胎胎壓", "fuelWarningPrimaryTank": "油箱警告", "yawRate": "偏航角速度", "driveMode": "駕駛模式", "lightState_rear": "後車燈狀態", "maxOutputPower": "最大輸出功率", "shortTermConsumptionPrimary": "短期油耗", "serviceInspection": "定期保養", "Car_vehicleState": "車輛狀態", "gearboxOilTemperature": "變速箱油溫", "acceleratorKickDown": "油門 Kickdown", "clampState": "電源端子狀態", "oilTemperature": "機油溫度", "tyreTemperatures": "輪胎溫度", "longTermConsumptionSecondary": "次要長期油耗", "coastingIsActive": "滑行模式", "combustionEngineInjection": "引擎噴射類型", "currentGear": "目前檔位", "totalDistance": "總里程", "tyreRequiredPressures": "建議胎壓", "cycleConsumptionPrimary": "主要單趟油耗", "startStopState": "怠速熄火狀態", "unitPressure": "壓力單位", "maxChargingAirPressure": "最大增壓壓力", "brakePressure": "煞車壓力", "lightState_front": "前車燈狀態", "clutch": "離合器", "consumptionShortTermGeneral": "短期平均消耗", "engineSpeed": "引擎轉速"};
 const hiddenKeys=new Set(['unitTemperature','unitPressure','unitVolume','tyrePressures','tyreRequiredPressures','tyreTemperatures','tyreStates']);
 const internal=new Set(['state','valid','unit','status','quality','timestamp','timestampms','source','type','available','supported']);
@@ -1644,20 +1772,29 @@ let jfTheme='day';
 try{const v=localStorage.getItem('jf.ui.theme');if(v==='day'||v==='night')jfTheme=v;}catch(e){}
 // V5.56: local display preference. Medium is the new default; never changes EXLAP values.
 const FONT_LABELS={"zh-Hant":["字體大小","小","中","大","超大"],"en":["Text size","Small","Medium","Large","Extra large"],"ja":["文字サイズ","小","中","大","特大"],"de":["Schriftgröße","Klein","Mittel","Groß","Sehr groß"],"es":["Tamaño de texto","Pequeño","Mediano","Grande","Muy grande"],"fr":["Taille du texte","Petit","Moyen","Grand","Très grand"],"ru":["Размер текста","Малый","Средний","Крупный","Очень крупный"],"pt":["Tamanho do texto","Pequeno","Médio","Grande","Muito grande"]};
-const FONT_CHOICES=['small','medium','large','xlarge'];
-function setJfFontSize(mode){
- if(!FONT_CHOICES.includes(mode))mode='medium';
- document.documentElement.dataset.jfTextSize=mode;
- document.getElementById('fontSizeSelect').value=mode;
- try{localStorage.setItem('jf.ui.fontSize',mode)}catch(_e){}
+// Unified, continuous text-size control. Legacy preferences are migrated automatically.
+const JF_OLD_FONT_SCALES={small:90,medium:110,large:135,xlarge:155};
+function jfNormalizeFontSize(value){
+ const converted=Object.prototype.hasOwnProperty.call(JF_OLD_FONT_SCALES,value)?JF_OLD_FONT_SCALES[value]:Number(value);
+ return Number.isFinite(converted)?Math.max(80,Math.min(160,Math.round(converted/5)*5)):110;
+}
+function setJfFontSize(value){
+ const size=jfNormalizeFontSize(value);
+ const root=document.documentElement;
+ root.style.setProperty('--jf-font-scale',String(size/100));
+ root.style.setProperty('--jf-user-text-size',String(size));
+ const slider=document.getElementById('fontSizeSelect');
+ if(slider)slider.value=String(size);
+ const out=document.getElementById('jfFontSizeValue');if(out)out.textContent=size+'%';
+ try{localStorage.setItem('jf.ui.fontSize',String(size));}catch(_e){}
 }
 function translateFontSize(){
  const a=FONT_LABELS[uiLanguage]||FONT_LABELS.en;
- document.getElementById('fontSizeLabel').textContent=a[0];
- document.querySelectorAll('#fontSizeSelect option').forEach((o,i)=>o.textContent=a[i+1]);
+ const label=document.getElementById('fontSizeLabel');if(label)label.textContent=a[0];
+ const slider=document.getElementById('fontSizeSelect');if(slider)slider.setAttribute('aria-label',a[0]);
 }
-let jfSavedFont='medium';try{jfSavedFont=localStorage.getItem('jf.ui.fontSize')||'medium'}catch(_e){}
-document.getElementById('fontSizeSelect').addEventListener('change',e=>setJfFontSize(e.target.value));
+let jfSavedFont='110';try{jfSavedFont=localStorage.getItem('jf.ui.fontSize')||'110';}catch(_e){}
+document.getElementById('fontSizeSelect').addEventListener('input',e=>setJfFontSize(e.target.value));
 setJfFontSize(jfSavedFont);
 function setJfTheme(mode){if(mode!=='day'&&mode!=='night')return;document.documentElement.setAttribute('data-theme',mode);document.getElementById('themeSelect').value=mode;try{localStorage.setItem('jf.ui.theme',mode);}catch(e){}}
 document.getElementById('themeSelect').addEventListener('change',e=>setJfTheme(e.target.value));
@@ -2133,4 +2270,102 @@ jfSyncHomeViewport();
    new MutationObserver(reflect).observe(mediaGrid,{childList:true});
  }
 })();</script>
+<script id="jf-v8-side-rail-and-value-fit">
+(function(){
+ 'use strict';
+ const init=()=>{
+  const layout=document.querySelector('#data .home-layout');
+  const rail=document.getElementById('jfSideRail');
+  const close=document.getElementById('jfSideCollapse');
+  const open=document.getElementById('jfSideExpand');
+  const music=document.getElementById('jfRailMusic');
+  const tires=document.getElementById('jfRailTires');
+  const host=document.getElementById('homeTiles');
+  if(!layout||!rail||!close||!open||!host)return;
+  const KEY='jf.dashboard.rightPanelCollapsed.v1';
+  let collapsed=false;
+  try{collapsed=localStorage.getItem(KEY)==='1';}catch(_){}
+  function updatePanel(state){
+   collapsed=!!state;
+   layout.classList.toggle('jf-side-collapsed',collapsed);
+   rail.hidden=!collapsed;
+   close.textContent=collapsed?'⇤':'⇥';
+   close.title=collapsed?'展開音樂與胎壓':'收合音樂與胎壓';
+   close.setAttribute('aria-label',close.title);
+   close.setAttribute('aria-expanded',String(!collapsed));
+   open.setAttribute('aria-expanded',String(!collapsed));
+   try{localStorage.setItem(KEY,collapsed?'1':'0');}catch(_){}
+   scheduleFit();
+  }
+  // These four controls only change the home layout; they never navigate tabs.
+  // Keep the click local so outer document/sidebar listeners cannot treat it as navigation.
+  const localAction=(button,callback)=>button.addEventListener('click',event=>{
+   event.preventDefault();
+   event.stopPropagation();
+   callback();
+  });
+  localAction(close,()=>updatePanel(!collapsed));
+  localAction(open,()=>updatePanel(false));
+  localAction(music,()=>updatePanel(false));
+  localAction(tires,()=>updatePanel(false));
+  let pending=false;
+  function scheduleFit(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;fitNumbers();});}
+  function fitNumbers(){
+   const scale=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--jf-font-scale'))||1.1;
+   const compact=innerWidth<=700&&innerHeight>innerWidth;
+   const shortLandscape=innerHeight<=720&&innerWidth>innerHeight;
+   const base=compact?21:(shortLandscape?25:29);
+   const top=compact?33:(shortLandscape?38:48);
+   const desired=Math.min(top,Math.max(14,base*scale));
+   const cvs=document.createElement('canvas');const context=cvs.getContext('2d');
+   host.querySelectorAll('.home-tile').forEach(card=>{
+    const value=card.querySelector('.tile-value');const unit=card.querySelector('.tile-unit');const reading=card.querySelector('.tile-reading');
+    if(!value||!reading)return;
+    // Width is measured with the actual available card width and reserved unit space.
+    const room=Math.max(40,reading.clientWidth-(unit?.getBoundingClientRect().width||0)-5);
+    let size=desired;
+    const content=value.textContent||'—';
+    if(context){context.font='700 '+size+'px system-ui,sans-serif';const px=context.measureText(content).width;
+      if(px>room)size=Math.max(12,Math.floor(size*room/px));
+    }
+    value.style.setProperty('--jf-value-fit',size.toFixed(1)+'px');
+   });
+  }
+  updatePanel(collapsed);
+  // Refit on new telemetry, language changes, resize, and live font slider movement.
+  new MutationObserver(scheduleFit).observe(host,{childList:true,subtree:true,characterData:true});
+  if('ResizeObserver' in window){new ResizeObserver(scheduleFit).observe(host);}
+  window.addEventListener('resize',scheduleFit,{passive:true});
+  document.getElementById('fontSizeSelect')?.addEventListener('input',scheduleFit);
+  document.getElementById('languageSelect')?.addEventListener('change',scheduleFit);
+  scheduleFit();
+ };
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+</script>
+<script id="jf-v82-font-live-preview">
+(function(){
+ function init(){
+  const setting=document.querySelector('#status .font-setting');
+  if(!setting||document.getElementById('jf-font-live-preview'))return;
+  const preview=document.createElement('div');
+  preview.id='jf-font-live-preview';
+  preview.setAttribute('aria-label','字體大小示意預覽');
+  const hint=document.createElement('span');hint.className='jf-preview-label';
+  const value=document.createElement('span');value.className='jf-preview-reading';value.innerHTML='750 <small>rpm</small>';
+  preview.append(hint,value);setting.append(preview);
+  const slider=document.getElementById('fontSizeSelect');
+  function update(){
+   const language=document.documentElement.lang||'zh-Hant';
+   hint.textContent=language.startsWith('zh')?'數值字體預覽（示意）':language.startsWith('en')?'Number size preview (sample)':language.startsWith('es')?'Vista previa (ejemplo)':'750 rpm · sample';
+   const pct=slider?Number(slider.value):110;
+   preview.setAttribute('title',pct+'%');
+  }
+  slider?.addEventListener('input',update);
+  document.getElementById('languageSelect')?.addEventListener('change',()=>requestAnimationFrame(update));
+  update();
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+</script>
 </body></html>
