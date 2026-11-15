@@ -755,7 +755,8 @@ body .top>#homeClock{min-width:0!important;}
   function update(){document.body.classList.toggle('jf-ipad-browser',tablet());}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',update);else update();
   window.addEventListener('resize',update,{passive:true});
-})();</script></head><body><main><header class="top"><div class="eyebrow">AIBox Bridge</div><span class="home-clock" id="homeClock"></span><div class="jf-header-right"><div aria-label="Vehicle temperature and voltage" class="jf-top-metrics"><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.28" id="jfOutsideLabel">車外</span><span class="jf-top-reading" id="jfOutsideTemp">—</span></span><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.29" id="jfVoltageLabel">電瓶</span><span class="jf-top-reading" id="jfVoltage">—</span></span></div><div class="live" id="connection"><i class="dot"></i><span id="connectionText">連線中</span></div></div></header><nav aria-label="頁面選單" class="tabs home-sidebar" data-jf-i18n-aria-label="xl.109"><button aria-label="車輛資訊" data-jf-i18n-aria-label="xl.31" data-jf-i18n-title="xl.31" data-tab="data" title="車輛資訊"><span class="nav-symbol"><svg aria-hidden="true" class="jf-car-icon" fill="none" focusable="false" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24" width="28"><path d="M5 11l1.7-5.1A2 2 0 0 1 8.6 4.5h6.8a2 2 0 0 1 1.9 1.4L19 11"></path><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"></path><path d="M6 18v2m12-2v2M6.5 14.5h2m7 0h2"></path></svg></span></button><button aria-label="音樂" data-jf-i18n-aria-label="xl.33" data-jf-i18n-title="xl.33" data-tab="media" title="音樂"><span class="nav-symbol">♫</span></button><button aria-label="設定與連線" data-jf-i18n-aria-label="xl.110" data-jf-i18n-title="xl.110" data-tab="status" title="設定與連線"><span class="nav-symbol">⚙</span></button></nav>
+})();</script>
+</head><body><main><header class="top"><div class="eyebrow">AIBox Bridge</div><span class="home-clock" id="homeClock"></span><div class="jf-header-right"><div aria-label="Vehicle temperature and voltage" class="jf-top-metrics"><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.28" id="jfOutsideLabel">車外</span><span class="jf-top-reading" id="jfOutsideTemp">—</span></span><span class="jf-top-item"><span class="jf-top-label" data-jf-i18n="xl.29" id="jfVoltageLabel">電瓶</span><span class="jf-top-reading" id="jfVoltage">—</span></span></div><div class="live" id="connection"><i class="dot"></i><span id="connectionText">連線中</span></div></div></header><nav aria-label="頁面選單" class="tabs home-sidebar" data-jf-i18n-aria-label="xl.109"><button aria-label="車輛資訊" data-jf-i18n-aria-label="xl.31" data-jf-i18n-title="xl.31" data-tab="data" title="車輛資訊"><span class="nav-symbol"><svg aria-hidden="true" class="jf-car-icon" fill="none" focusable="false" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24" width="28"><path d="M5 11l1.7-5.1A2 2 0 0 1 8.6 4.5h6.8a2 2 0 0 1 1.9 1.4L19 11"></path><path d="M4 11h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1z"></path><path d="M6 18v2m12-2v2M6.5 14.5h2m7 0h2"></path></svg></span></button><button aria-label="音樂" data-jf-i18n-aria-label="xl.33" data-jf-i18n-title="xl.33" data-tab="media" title="音樂"><span class="nav-symbol">♫</span></button><button aria-label="設定與連線" data-jf-i18n-aria-label="xl.110" data-jf-i18n-title="xl.110" data-tab="status" title="設定與連線"><span class="nav-symbol">⚙</span></button></nav>
 <section class="page" id="data"><div class="home-layout"><div class="home-vehicle"><div class="home-section-bar"><div class="home-title" data-jf-i18n="xl.31" id="homeVehicleTitle">車輛資訊</div><div class="home-actions"><span class="home-page-label" id="homePageLabel">1 / 1</span><button aria-label="自訂首頁" class="home-icon-btn" id="homeEdit" title="自訂首頁" type="button">✎</button></div></div><div aria-label="九宮格車輛數據" class="home-tiles" data-jf-i18n-aria-label="xl.113" id="homeTiles"></div><div class="home-pager"><button aria-label="上一頁" data-jf-i18n-aria-label="xl.114" id="homePrev" type="button">‹</button><div class="home-dots" id="homeDots"></div><button aria-label="下一頁" data-jf-i18n-aria-label="xl.115" id="homeNext" type="button">›</button></div><div class="home-hint" id="homeHint">左右滑動切換資料頁 · 點選編輯可以調整排列</div></div><div class="home-right"><section class="home-music-panel"><div class="home-section-bar"><div class="home-title" data-jf-i18n="xl.33" id="homeMusicTitle">音樂</div><button aria-label="開啟音樂頁" class="home-icon-btn" data-jf-i18n-aria-label="xl.118" id="homeMusicOpen" type="button">›</button></div><div class="home-music-main"><div class="home-artwork" id="homeArtwork">♫</div><div class="home-track"><div class="home-song-name" id="homeSong">—</div><div class="home-song-artist" id="homeArtist">—</div><div class="home-media-status" id="homeMediaStatus"></div></div></div><div class="home-music-controls"><button aria-label="上一首" data-home-music="prev" data-jf-i18n-aria-label="xl.119" type="button">◀◀</button><button aria-label="播放暫停" class="home-play" data-home-music="play" data-jf-i18n-aria-label="xl.120" type="button">▶ /Ⅱ</button><button aria-label="下一首" data-home-music="next" data-jf-i18n-aria-label="xl.121" type="button">▶▶</button></div></section><section class="home-tpms-panel"><div class="tpms-inline"><div class="sectionHead"><h2 data-i18n="tpmsTitle">四輪胎壓</h2><div class="tpms-select"><label data-i18n="unit" for="pressureUnit">單位</label><select aria-label="胎壓單位" data-jf-i18n-aria-label="xl.124" id="pressureUnit"><option value="bar">bar</option><option value="psi">psi</option></select></div></div><div class="tpms-scene"><div class="tpms-slot" id="tireFL"><div class="wheel-name" data-i18n="FL">左前</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div aria-label="車輛俯視圖，車頭朝上" class="tpms-car" data-jf-i18n-aria-label="xl.127"><svg aria-label="車輛俯視圖" role="img" viewbox="0 0 120 240"><rect fill="#456074" height="214" rx="33" stroke="#86bad6" stroke-width="3" width="86" x="17" y="13"></rect><rect fill="#142735" height="49" rx="12" stroke="#5a829d" stroke-width="2" width="70" x="25" y="48"></rect><rect fill="#142735" height="44" rx="12" stroke="#5a829d" stroke-width="2" width="70" x="25" y="153"></rect><rect fill="#30485c" height="47" rx="12" stroke="#668da6" width="60" x="30" y="101"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelFL" rx="6" width="13" x="4" y="52"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelFR" rx="6" width="13" x="103" y="52"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelRL" rx="6" width="13" x="4" y="158"></rect><rect class="car-wheel" fill="#1e3548" height="39" id="carWheelRR" rx="6" width="13" x="103" y="158"></rect><path d="M32 22H88" stroke="#b7d5eb" stroke-linecap="round" stroke-width="4"></path><path d="M34 217H86" stroke="#f47b7b" stroke-linecap="round" stroke-width="4"></path></svg><span data-i18n="front">車頭 ↑</span></div><div class="tpms-slot" id="tireFR"><div class="wheel-name" data-i18n="FR">右前</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div class="tpms-slot" id="tireRL"><div class="wheel-name" data-i18n="RL">左後</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div><div class="tpms-slot" id="tireRR"><div class="wheel-name" data-i18n="RR">右後</div><div class="wheel-pressure">—</div><div class="wheel-note" data-jf-i18n="xl.37">建議 —</div></div></div><div class="tpms-legend" id="tpmsLegend"><span class="legend-normal" data-jf-i18n="xl.42" data-tpms-legend="normal">● 正常</span><span class="legend-low" data-jf-i18n="xl.43" data-tpms-legend="low">● 偏低</span><span class="legend-unknown" data-jf-i18n="xl.44" data-tpms-legend="unknown">● 無資料</span></div><div aria-live="polite" class="tpms-warning" id="tpmsWarning" role="status"></div><p class="muted" id="tpmsNote">—</p><div class="tpms-stale" id="tpmsStale">資料暫未更新</div></div></section></div></div><div class="legacy-data" hidden=""><div id="hero"></div><div id="dataGrid"></div><span id="count"></span><span id="globalAge"></span><span id="telemetryMode"></span><span id="speedSampleRate"></span><button id="resortData"></button><button id="editDashboard"></button><button hidden="" id="resetDashboard"></button><select id="refreshMs"><option value="50">50</option><option value="100">100</option><option value="250">250</option><option value="500">500</option><option value="1000">1000</option></select></div><div class="home-editor-overlay" hidden="" id="homeEditor"><div class="home-editor-dialog"><div class="home-editor-head"><strong data-jf-i18n="xl.46" id="homeEditTitle">自訂首頁數據</strong><button data-jf-i18n="xl.47" id="homeEditorDone" type="button">完成</button></div><p id="homeEditDesc">勾選要顯示的資料，用上下箭頭調整順序。每頁顯示 9 項，自動記住設定。</p><div class="home-editor-tools"><select aria-label="欄位篩選" class="home-editor-filter" data-jf-i18n-aria-label="xl.141" id="homeSupportFilter"><option value="all">全部欄位</option><option value="observed">已有資料</option><option value="uncertain">可能不支援</option></select><button data-jf-i18n="xl.52" id="homeHideUnsupported" type="button">隱藏可能不支援</button><button data-jf-i18n="xl.53" id="homeEditReset" type="button">重設排序</button><button data-jf-i18n="xl.54" id="homeEditAll" type="button">全部顯示</button></div><div class="home-editor-list" id="homeEditorRows"></div></div></div></section><section class="page" hidden="" id="tpms"></section><section class="page" hidden="" id="split"><div class="split-shell"><div class="split-telemetry"><div class="split-heading"><strong data-jf-i18n="xl.55" id="splitDataHeading">即時車輛資訊</strong><span class="muted" id="splitDataState">—</span><button class="split-config-toggle" data-jf-i18n="xl.56" id="splitConfigure" type="button">✎ 自訂</button></div><div class="split-custom-panel" id="splitCustomPanel"><div class="split-config-help" data-jf-i18n="xl.57" id="splitEditHelp">選擇分割畫面顯示的欄位，使用 ↑ ↓ 調整順序。設定會記住。</div><div class="split-custom-scroll" id="splitCustomRows"></div><button data-jf-i18n="xl.58" id="splitReset" type="button">↺ 重設</button></div><div class="split-metrics" id="splitMetrics"></div><div class="split-tpms"><strong data-jf-i18n="xl.34" id="splitTpmsHeading">四輪胎壓</strong><div class="split-tires"><div class="split-tire" id="splitTireFL">—</div><div class="split-tire" id="splitTireFR">—</div><div class="split-tire" id="splitTireRL">—</div><div class="split-tire" id="splitTireRR">—</div></div><div class="muted" id="splitTireWarning" style="margin-top:7px"></div></div><div class="split-map-note" data-jf-i18n="xl.59" id="splitLiveNote">車輛資訊持續更新；地圖需要 AI Box 具備網際網路連線。</div></div><div class="split-map-panel"><div class="split-heading"><strong data-jf-i18n="xl.60" id="splitMapHeading">地圖</strong><button data-jf-i18n="xl.61" id="splitOpenGoogle" type="button">開啟 Google Maps App</button></div><div class="split-map-settings"><label data-jf-i18n="xl.62" for="splitMapProvider" id="splitMapProviderLabel">地圖來源</label><select id="splitMapProvider"><option value="osm">OpenStreetMap</option><option value="google">Google Maps Embed</option></select></div><div class="split-map-keyrow" hidden="" id="splitGoogleKeyRow"><input aria-label="Google Maps Embed API Key" autocomplete="off" id="splitGoogleKey" placeholder="Google Maps Embed API Key" spellcheck="false" type="password"/><button data-jf-i18n="xl.63" id="splitGoogleSave" type="button">儲存並載入</button><button data-jf-i18n="xl.64" id="splitGoogleClear" type="button">清除 Key</button></div><div class="split-config-help" id="splitProviderNote"></div><div hidden="" id="splitMapFrame"></div><div class="split-map-note" data-jf-i18n="xl.65" id="splitMapNote">可選 OpenStreetMap 或 Google Maps Embed（需個人 API Key）。不是完整 Google Maps 導航；僅在安全停車時操作地圖。</div></div></div></section>
 <section class="page" id="media"><div class="compactTitle"><span data-jf-i18n="home.audio" id="autoAudioHeading">自動音源</span> <span class="sourceSelect" hidden=""><button data-source="android" type="button">AI Box</button><button data-source="vehicle" type="button">MU1101 <span data-i18n="vehicle">原車</span></button></span></div><div class="nowplaying"><div aria-label="音樂封面" class="albumart" data-jf-i18n-aria-label="xl.161" id="albumArt"><span id="albumPlaceholder">♫</span><img alt="" hidden="" id="albumImage"/></div><div class="song"><div class="eyebrow" data-i18n="playing">正在播放</div><div class="songtitle" id="songTitle">—</div><div class="songartist" id="songArtist">—</div><div class="songalbum" id="songAlbum"></div><div class="jf-media-app" id="jfMediaApp"></div><div aria-live="polite" class="media-status" id="mediaStatus"></div><button class="grant-media" hidden="" id="grantMedia" type="button">授權讀取 AI Box 播放資訊</button></div></div><div class="playerControls"><div class="jf-media-touch-entry"><a aria-label="開啟 AI Box Touchpad" data-jf-i18n-aria-label="xl.164" href="#" id="jf-media-touch-link">⌁ Touchpad</a></div><div class="transport"><button aria-label="上一首" data-jf-i18n-aria-label="xl.119" data-music="prev" type="button">⏮</button><button aria-label="播放或暫停" class="mainplay" data-jf-i18n-aria-label="xl.165" data-music="play" type="button">⏯</button><button aria-label="下一首" data-jf-i18n-aria-label="xl.121" data-music="next" type="button">⏭</button></div><div class="volumeControls"><label class="jf-volume-label"><span data-jf-i18n="media.vehicleVolume">原車音量</span><span class="volread" id="volumeCurrent">—</span><input aria-label="原車音量滑桿" data-jf-i18n-aria-label="xl.167" id="jfVehicleVolume" max="30" min="0" step="1" type="range" value="15"/><span class="muted" id="muteCurrent">音量</span></label><button aria-label="靜音" data-jf-i18n-aria-label="xl.169" data-music="mute" type="button">🔇</button></div></div><div class="controlToast" id="controlToast" role="status"></div><h2 data-i18n="audioInfo">音訊資訊</h2><div class="grid" id="mediaGrid"></div></section>
 <style>.diagnostics-panel{border:1px solid #35546a;background:#142432;border-radius:12px;padding:12px;margin:12px 0}.diagnostics-panel button{padding:9px 12px;margin-right:8px;margin-bottom:6px;background:#28506a;color:#fff;border:1px solid #50748d;border-radius:8px}.diagnostics-panel pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;max-height:210px;overflow:auto;color:#c7daec}</style><section class="page" id="status"><div class="quick-settings" id="languageSettings"><div class="language-setting"><label data-i18n="language" for="languageSelect">語言</label><select id="languageSelect"><option value="auto">自動（系統語言）</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="ru">Русский</option><option value="pt">Português</option></select></div><select aria-label="Theme (internal state)" hidden="" id="themeSelect" tabindex="-1"><option data-i18n="nightMode" value="night">夜晚模式</option><option data-i18n="dayMode" value="day">白天模式</option></select><div class="font-setting"><label data-jf-i18n="xl.79" for="fontSizeSelect" id="fontSizeLabel">字體大小</label><select aria-label="Dashboard text size" id="fontSizeSelect"><option value="small">小</option><option value="medium">中</option><option value="large">大</option><option value="xlarge">超大</option></select></div></div><div class="jf-media-test" style="border:1px solid var(--border);border-radius:10px;padding:10px;margin:9px 0;background:var(--card);display:flex;flex-wrap:wrap;align-items:center;gap:10px"><div style="flex:1;min-width:190px"><strong data-jf-i18n="xl.81">原車媒體 EXLAP（隔離測試）</strong><div class="muted" data-jf-i18n="xl.82" style="font-size:12px">關閉：仍可讀取車速、胎壓和 Android 音樂；不登入原車媒體、不讀取原車媒體欄位。開啟：恢復原車音樂資訊與控制。</div><div class="muted" id="mediaIsolationState">讀取設定中…</div></div><button id="mediaIsolationToggle" style="min-width:110px" type="button">讀取中…</button></div><div class="bridgebar"><div><strong>Bridge</strong><div class="muted" id="bridgeState">檢查連線中</div></div><div class="bridgeactions"><button data-i18n="start" id="bridgeStart" type="button">啟動</button><button data-i18n="stop" id="bridgeStop" type="button">停止</button><button id="bridgeQr" type="button">QR Code</button></div></div><div aria-live="polite" class="muted" id="bridgeFeedback"></div><details class="jf-health-details" id="jfHealthDetails"><summary data-jf-i18n="xl.88" id="jfHealthTitle">連線健康資訊</summary><div class="jf-health-grid" id="jfHealthGrid"></div></details><details class="connectDetails" id="connectionExtra"><summary data-i18n="details">連線詳細資訊及手機連結</summary><div class="grid" id="statusGrid"></div><a id="share"></a></details><details class="connectDetails advanced-settings" id="advancedTools"><summary data-i18n="advancedTools">進階工具（診斷・備份）</summary><div class="diagnostics-panel"><strong data-i18n="diagTitle">MU1101 相容性檢測</strong><p class="muted" data-i18n="diagReadOnly">唯讀檢查</p><button data-i18n="diagRun" id="diagRun" type="button">檢查相容性</button><button data-i18n="diagExport" disabled="" id="diagSave" type="button">匯出 JSON</button><pre data-i18n="diagNotRun" id="diagResult">尚未執行</pre></div><details class="connectDetails" id="settingsBackup"><summary data-i18n="settingsBackup">備份與還原儀表板設定</summary><p class="muted" data-i18n="backupHelp">只包含介面偏好，不包含密碼或車輛資料。</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button data-i18n="backupGenerate" id="backupGenerate" type="button">產生設定備份</button><button data-i18n="backupRestore" id="backupRestore" type="button">套用設定備份</button></div><textarea aria-label="JSON settings backup" id="backupContents" rows="4" spellcheck="false" style="box-sizing:border-box;width:100%;max-width:100%;margin-top:7px;border-radius:8px;padding:9px;background:var(--panel,#182633);color:var(--text,#f0f7ff);border:1px solid #7293a7"></textarea><p aria-live="polite" class="muted" id="backupFeedback"></p></details></details></section><footer data-i18n="parked">停車時使用</footer></main><script>
@@ -2033,37 +2034,7 @@ body .top>.jf-top-metrics,body.jf-home-landscape .top>.jf-top-metrics{order:1!im
 body .top>#connection,body.jf-home-landscape .top>#connection{order:2!important;flex:0 0 auto!important;margin:0!important;}
 body .top>.jf-global-tools,body.jf-home-landscape .top>.jf-global-tools{order:3!important;flex:0 0 auto!important;margin:0!important;}
 </style>
-<style id="jf-v57030-structural-header">
-/* One actual three-column header on all pages; right controls share a container. */
-body .top,body.jf-browser .top,body.jf-home-landscape .top,body.page-media .top,body.page-tpms .top{
- display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;
- grid-template-rows:46px!important;align-items:center!important;column-gap:8px!important;
- height:46px!important;min-height:46px!important;max-height:46px!important;
- padding:0 14px!important;box-sizing:border-box!important;overflow:visible!important;
-}
-body .top>.eyebrow,body.jf-home-landscape .top>.eyebrow{grid-column:1!important;grid-row:1!important;justify-self:start!important;margin:0!important;min-width:0!important;}
-body .top>#homeClock,body.jf-home-landscape .top>#homeClock,body.jf-browser .top>#homeClock{
- grid-column:2!important;grid-row:1!important;justify-self:center!important;
- position:static!important;left:auto!important;right:auto!important;top:auto!important;
- transform:none!important;display:block!important;margin:0!important;padding:0!important;
- text-align:center!important;white-space:nowrap!important;
-}
-body .top>.jf-header-right,body.jf-home-landscape .top>.jf-header-right{
- grid-column:3!important;grid-row:1!important;justify-self:end!important;display:flex!important;
- align-items:center!important;justify-content:flex-end!important;gap:9px!important;
- margin:0!important;min-width:0!important;white-space:nowrap!important;
-}
-body .top .jf-header-right>.jf-top-metrics,body.jf-home-landscape .top .jf-header-right>.jf-top-metrics,
-body .top .jf-header-right>#connection,body.jf-home-landscape .top .jf-header-right>#connection,
-body .top .jf-header-right>.jf-global-tools,body.jf-home-landscape .top .jf-header-right>.jf-global-tools{
- display:flex!important;position:static!important;order:initial!important;flex:0 0 auto!important;
- margin:0!important;align-items:center!important;
-}
-body .top .jf-header-right>.jf-global-tools{gap:5px!important;}
-body.page-media .top>#homeClock,body.page-tpms .top>#homeClock,body.page-status .top>#homeClock,body.jf-browser.page-media .top>#homeClock,body.jf-browser.page-status .top>#homeClock{display:block!important;visibility:visible!important;opacity:1!important;}
-@media(max-width:1100px){body .top .jf-header-right{gap:5px!important}body .top .jf-header-right .jf-top-label{display:none!important}}
-@media(max-width:750px){body .top,body.jf-browser .top,body.jf-home-landscape .top{padding:0 7px!important;column-gap:3px!important}body .top .jf-header-right #connectionText{display:none!important}body .top .jf-header-right .jf-wifi-label{display:none!important}body .top .jf-header-right .jf-top-metrics{display:none!important}body .top>#homeClock{display:block!important}}
-</style>
+
 <style id="jf-v57032-ux">
 /* The existing three-column header is deliberately untouched. */
 :root{--jf-side-width:48px}
@@ -2204,13 +2175,7 @@ body nav.home-sidebar.tabs>button[data-tab]::before,body nav.home-sidebar.tabs>b
  body.page-media #mediaGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
 }
 </style>
-<style id="jf-v57053-clean-ui">
-/* Single consistent top clock across dashboard pages. */
-body .top{position:relative!important;min-height:46px!important}
-body .top .home-clock,body.jf-browser .top .home-clock,body.jf-home-landscape .top .home-clock{display:block!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;margin:0!important;white-space:nowrap!important;font-size:13px!important;font-weight:650!important;opacity:.86!important;pointer-events:none!important}
-body .top .jf-header-right{margin-left:auto!important}
-@media(max-width:640px){body .top .home-clock{left:48%!important;font-size:11px!important}body .top .jf-top-metrics{display:none!important}}
-#status .jf-setting-panel{border-radius:16px!important;margin:0 0 9px!important;box-shadow:none!important}
+<style id="jf-v57053-clean-ui">#status .jf-setting-panel{border-radius:16px!important;margin:0 0 9px!important;box-shadow:none!important}
 #status .jf-setting-panel>summary{min-height:48px!important;padding:11px 14px!important;font-size:15px!important}
 #status .jf-setting-panel .jf-settings-inner{padding:8px 14px 14px!important}
 #status .jf-native-actions button,#status .jf-v532-touch button{min-height:40px!important;border-radius:11px!important;margin:0!important}
@@ -2297,204 +2262,184 @@ body.page-media #media h2{font-size:12px!important;margin:3px 0!important}
  body.jf-browser #data .home-tpms-panel .wheel-pressure{font-size:17px!important}
 }
 </style>
-<style id="jf-v57066-single-header-layout">
-/* Single persistent header: same DOM, same grid and coordinate system on every tab. */
-@media (min-width:751px) {
- body main,body.jf-browser main,body.jf-home-landscape main,body.page-data main,body.page-media main,body.page-status main,body.page-tpms main{padding-top:6px!important;}
- body header.top,body.page-data header.top,body.page-media header.top,body.page-status header.top,body.page-tpms header.top,body.jf-browser header.top,body.jf-home-landscape header.top{
-  display:grid!important;grid-template-columns:minmax(0,1fr) 105px minmax(0,1fr)!important;grid-template-rows:46px!important;
-  box-sizing:border-box!important;position:relative!important;inset:auto!important;transform:none!important;
-  width:100%!important;min-width:0!important;max-width:100%!important;
-  height:46px!important;min-height:46px!important;max-height:46px!important;
-  margin:0 0 6px!important;padding:0 12px!important;gap:8px!important;align-items:center!important;
-  flex:0 0 46px!important;overflow:visible!important;
- }
- body header.top>.eyebrow{grid-area:1/1!important;position:static!important;transform:none!important;margin:0!important;align-self:center!important;justify-self:start!important;min-width:0!important;white-space:nowrap!important;}
- body header.top>#homeClock{grid-area:1/2!important;position:static!important;inset:auto!important;transform:none!important;display:block!important;visibility:visible!important;margin:0!important;align-self:center!important;justify-self:center!important;text-align:center!important;white-space:nowrap!important;font-variant-numeric:tabular-nums!important;}
- body header.top>.jf-header-right{grid-area:1/3!important;position:static!important;inset:auto!important;transform:none!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;justify-self:stretch!important;align-self:center!important;width:auto!important;min-width:0!important;max-width:100%!important;margin:0!important;gap:8px!important;white-space:nowrap!important;}
- body header.top .jf-top-metrics{display:flex!important;position:static!important;gap:7px!important;margin:0!important;white-space:nowrap!important;}
- body header.top #connection{position:static!important;margin:0!important;white-space:nowrap!important;}
- body nav.home-sidebar.tabs,body.jf-home-landscape nav.home-sidebar.tabs{top:0!important;}
-}
-@media (max-width:750px){body header.top{box-sizing:border-box!important;}body header.top .jf-top-metrics{display:none!important;}}
-</style>
 
-<style id="jf-v9-fixed-header-columns">
-/* V9: Stable right-side information positions on every tab and every language.
-   Previous max-content columns moved the clock whenever translations changed length.
-   Fixed grid tracks reserve the same slots, and long text truncates within its slot. */
-@media (min-width:1200px) {
-  body header.top,body.page-data header.top,body.page-media header.top,
-  body.page-status header.top,body.page-tpms header.top,
-  body.jf-browser header.top,body.jf-home-landscape header.top {
-    grid-template-columns:minmax(0,1fr) 70px 560px!important;
-    column-gap:10px!important;
-  }
-  body header.top>.jf-header-right,
-  body.jf-browser header.top>.jf-header-right,
-  body.jf-home-landscape header.top>.jf-header-right {
-    display:grid!important;
-    grid-template-columns:124px minmax(0,1fr) 280px!important;
-    column-gap:6px!important;
-  }
-}
-@media (min-width:1000px) and (max-width:1199px) {
-  body header.top,body.page-data header.top,body.page-media header.top,
-  body.page-status header.top,body.page-tpms header.top,
-  body.jf-browser header.top,body.jf-home-landscape header.top {
-    grid-template-columns:minmax(0,1fr) 62px 400px!important;
-    column-gap:8px!important;
-  }
-  body header.top>.jf-header-right,
-  body.jf-browser header.top>.jf-header-right,
-  body.jf-home-landscape header.top>.jf-header-right {
-    display:grid!important;
-    grid-template-columns:minmax(0,1fr) 268px!important;
-    column-gap:6px!important;
-  }
-  body header.top>.jf-header-right>.jf-top-metrics {display:none!important;}
-}
-@media (min-width:751px) and (max-width:999px) {
-  body header.top,body.page-data header.top,body.page-media header.top,
-  body.page-status header.top,body.page-tpms header.top,
-  body.jf-browser header.top,body.jf-home-landscape header.top {
-    grid-template-columns:minmax(0,1fr) 54px 310px!important;
-    column-gap:6px!important;
-  }
-  body header.top>.jf-header-right,
-  body.jf-browser header.top>.jf-header-right,
-  body.jf-home-landscape header.top>.jf-header-right {
-    display:grid!important;
-    grid-template-columns:minmax(0,1fr) 240px!important;
-    column-gap:5px!important;
-  }
-  body header.top>.jf-header-right>.jf-top-metrics {display:none!important;}
-  body header.top #connectionText {display:none!important;}
-}
-@media (min-width:751px) {
-  body header.top,body.page-data header.top,body.page-media header.top,
-  body.page-status header.top,body.page-tpms header.top,
-  body.jf-browser header.top,body.jf-home-landscape header.top {
-    box-sizing:border-box!important;
-    align-items:center!important;
-    overflow:hidden!important;
-  }
-  body header.top>.eyebrow {
-    min-width:0!important;
-    overflow:hidden!important;
-    text-overflow:ellipsis!important;
-    white-space:nowrap!important;
-  }
-  body header.top>#homeClock {
-    grid-area:1 / 2!important;
-    min-width:0!important;
-    width:100%!important;
-    margin:0!important;
-    justify-self:center!important;
-    text-align:center!important;
-    position:static!important;
-    inset:auto!important;
-    transform:none!important;
-    white-space:nowrap!important;
-    font-variant-numeric:tabular-nums!important;
-  }
-  body header.top>.jf-header-right {
-    grid-area:1 / 3!important;
-    position:static!important;
-    inset:auto!important;
-    width:100%!important;
-    max-width:100%!important;
-    min-width:0!important;
-    margin:0!important;
-    justify-self:stretch!important;
-    align-self:center!important;
-    align-items:center!important;
-    white-space:nowrap!important;
-    overflow:hidden!important;
-  }
-  body header.top .jf-top-metrics {
-    min-width:0!important;
-    width:100%!important;
-    overflow:hidden!important;
-    white-space:nowrap!important;
-  }
-  body header.top .jf-top-metrics .jf-top-item {
-    min-width:0!important;
-    max-width:100%!important;
-    overflow:hidden!important;
-    white-space:nowrap!important;
-  }
-  body header.top #connection {
-    display:flex!important;
-    align-items:center!important;
-    justify-self:stretch!important;
-    min-width:0!important;
-    width:100%!important;
-    max-width:100%!important;
-    margin:0!important;
-    overflow:hidden!important;
-    white-space:nowrap!important;
-  }
-  body header.top #connection .dot {flex:0 0 auto!important;}
-  body header.top #connectionText {
-    min-width:0!important;
-    max-width:100%!important;
-    overflow:hidden!important;
-    text-overflow:ellipsis!important;
-    white-space:nowrap!important;
-  }
-  body header.top>.jf-header-right>.jf-global-tools {
-    display:grid!important;
-    grid-template-columns:55px minmax(0,1fr)!important;
-    align-items:center!important;
-    column-gap:5px!important;
-    min-width:0!important;
-    width:100%!important;
-    max-width:100%!important;
-    margin:0!important;
-    overflow:hidden!important;
-  }
-  body header.top .jf-global-tools button {
-    box-sizing:border-box!important;
-    display:block!important;
-    min-width:0!important;
-    max-width:100%!important;
-    width:100%!important;
-    padding-left:5px!important;
-    padding-right:5px!important;
-    white-space:nowrap!important;
-    overflow:hidden!important;
-    text-overflow:ellipsis!important;
-    text-align:center!important;
-  }
-  body header.top .jf-global-tools .jf-theme-shortcut {grid-column:1!important;}
-  body header.top .jf-global-tools .jf-wifi-shortcut {grid-column:2!important;}
-}
 
-/* Header alignment correction: same header element on every tab.
-   Home landscape has a different main padding and legacy Flex rules.
-   Normalize only the header width and tool display, without resizing controls. */
-@media (min-width:751px) {
-  body header.top,
-  body.jf-browser header.top,
-  body.jf-home-landscape header.top,
-  body.page-data header.top,
-  body.page-media header.top,
-  body.page-status header.top,
-  body.page-tpms header.top {
-    width:calc(100vw - 105px)!important;
-    max-width:calc(100vw - 105px)!important;
-  }
-  body header.top>.jf-header-right>.jf-global-tools,
-  body.jf-browser header.top>.jf-header-right>.jf-global-tools,
-  body.jf-home-landscape header.top>.jf-header-right>.jf-global-tools {
-    display:grid!important;
-    grid-template-columns:55px minmax(0,1fr)!important;
-    column-gap:5px!important;
-  }
-}
-</style>
+
+
 <script id="jf-v8-i18n-initial-pass">(function(){const sync=()=>{if(typeof jfApplyFixedI18n==='function')jfApplyFixedI18n();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sync,{once:true});else sync();
  document.getElementById('languageSelect')?.addEventListener('change',()=>requestAnimationFrame(sync));
-})();</script></body></html>
+})();</script><style id="jf-unified-header-v1">
+/* SINGLE shared Header design for Vehicle / Media / Settings.
+   Intentionally independent of page-data/page-media/page-status classes.
+   Do not duplicate its layout in page-specific CSS. */
+body header.top,
+body.jf-home-landscape header.top,
+body.jf-browser header.top,
+body.page-media header.top {
+  box-sizing:border-box!important;
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 92px minmax(0,1fr)!important;
+  grid-template-rows:46px!important;
+  align-items:center!important;
+  gap:0!important;
+  width:calc(100vw - 96px)!important;
+  max-width:calc(100vw - 96px)!important;
+  min-width:0!important;
+  height:46px!important;
+  min-height:46px!important;
+  max-height:46px!important;
+  padding:0 10px!important;
+  margin:0 0 6px!important;
+  flex:none!important;
+  flex-wrap:nowrap!important;
+  overflow:hidden!important;
+}
+body header.top>.eyebrow,
+body.jf-home-landscape header.top>.eyebrow {
+  grid-column:1!important;grid-row:1!important;
+  justify-self:start!important;align-self:center!important;
+  position:static!important;
+  margin:0!important;max-width:100%!important;min-width:0!important;
+  overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;
+}
+body header.top>#homeClock,
+body.jf-home-landscape header.top>#homeClock,
+body.jf-browser header.top>#homeClock,
+body.page-media header.top>#homeClock {
+  display:block!important;visibility:visible!important;
+  grid-column:2!important;grid-row:1!important;
+  position:static!important;top:auto!important;left:auto!important;right:auto!important;
+  transform:none!important;inset:auto!important;
+  justify-self:center!important;align-self:center!important;text-align:center!important;
+  min-width:0!important;width:100%!important;max-width:100%!important;
+  margin:0!important;padding:0!important;white-space:nowrap!important;
+  font-size:12px!important;font-variant-numeric:tabular-nums!important;
+}
+body header.top>.jf-header-right,
+body.jf-home-landscape header.top>.jf-header-right,
+body.jf-browser header.top>.jf-header-right,
+body.page-media header.top>.jf-header-right {
+  grid-column:3!important;grid-row:1!important;
+  position:static!important;inset:auto!important;transform:none!important;
+  display:grid!important;
+  grid-template-columns:155px 14px 178px!important;
+  grid-template-rows:34px!important;
+  column-gap:5px!important;
+  justify-self:end!important;align-self:center!important;align-items:center!important;
+  box-sizing:border-box!important;
+  width:357px!important;min-width:357px!important;max-width:357px!important;
+  height:34px!important;min-height:34px!important;max-height:34px!important;
+  margin:0!important;padding:0!important;overflow:hidden!important;white-space:nowrap!important;
+}
+body header.top>.jf-header-right>.jf-top-metrics,
+body.jf-home-landscape header.top>.jf-header-right>.jf-top-metrics {
+  grid-column:1!important;grid-row:1!important;
+  display:flex!important;position:static!important;
+  align-items:center!important;justify-content:flex-start!important;
+  gap:5px!important;box-sizing:border-box!important;
+  width:155px!important;max-width:155px!important;min-width:0!important;
+  height:30px!important;margin:0!important;padding:0!important;
+  overflow:hidden!important;white-space:nowrap!important;
+}
+body header.top .jf-top-metrics .jf-top-item{
+  display:inline-flex!important;flex:0 1 auto!important;align-items:center!important;
+  min-width:0!important;gap:2px!important;overflow:hidden!important;white-space:nowrap!important;
+}
+body header.top .jf-top-metrics .jf-top-label{
+  display:inline!important;max-width:55px!important;overflow:hidden!important;
+  text-overflow:ellipsis!important;white-space:nowrap!important;font-size:9px!important;
+}
+body header.top .jf-top-metrics .jf-top-reading{
+  display:inline!important;flex:0 0 auto!important;font-size:11px!important;
+  white-space:nowrap!important;font-variant-numeric:tabular-nums!important;
+}
+body header.top>.jf-header-right>#connection {
+  grid-column:2!important;grid-row:1!important;position:static!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  box-sizing:border-box!important;width:14px!important;min-width:14px!important;max-width:14px!important;
+  height:24px!important;margin:0!important;padding:0!important;overflow:hidden!important;
+}
+body header.top #connection .dot{flex:0 0 auto!important;}
+body header.top #connectionText{display:none!important;}
+body header.top>.jf-header-right>.jf-global-tools,
+body.jf-home-landscape header.top>.jf-header-right>.jf-global-tools{
+  grid-column:3!important;grid-row:1!important;display:grid!important;
+  grid-template-columns:54px 118px!important;grid-template-rows:32px!important;
+  column-gap:6px!important;align-items:center!important;
+  box-sizing:border-box!important;width:178px!important;min-width:178px!important;max-width:178px!important;
+  height:32px!important;margin:0!important;padding:0!important;overflow:hidden!important;
+}
+body header.top .jf-global-tools button,
+body.jf-home-landscape header.top .jf-global-tools button{
+  box-sizing:border-box!important;display:block!important;position:static!important;
+  height:32px!important;min-height:32px!important;max-height:32px!important;
+  width:100%!important;min-width:0!important;max-width:100%!important;
+  margin:0!important;padding:3px 4px!important;line-height:24px!important;
+  white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+  text-align:center!important;float:none!important;
+}
+body header.top .jf-global-tools .jf-theme-shortcut{display:block!important;grid-column:1!important;grid-row:1!important;}
+body header.top .jf-global-tools .jf-wifi-shortcut{display:block!important;grid-column:2!important;grid-row:1!important;}
+/* Compact mode: all three tabs still share the same geometry; preserve both live numeric readings. */
+@media(max-width:900px){
+ body header.top,body.jf-home-landscape header.top,body.jf-browser header.top,body.page-media header.top{
+   grid-template-columns:minmax(0,1fr) 74px minmax(0,1fr)!important;
+   padding:0 6px!important;
+ }
+ body header.top>.jf-header-right,body.jf-home-landscape header.top>.jf-header-right,
+ body.jf-browser header.top>.jf-header-right,body.page-media header.top>.jf-header-right{
+   grid-template-columns:90px 12px 143px!important;column-gap:4px!important;
+   width:253px!important;min-width:253px!important;max-width:253px!important;
+ }
+ body header.top>.jf-header-right>.jf-top-metrics{width:90px!important;max-width:90px!important;gap:3px!important;}
+ body.page-media header.top>#homeClock{width:74px!important;min-width:0!important;max-width:74px!important;}
+ body header.top .jf-top-metrics .jf-top-label{display:none!important;}
+ body header.top .jf-top-metrics .jf-top-reading{font-size:10px!important;}
+ body header.top>.jf-header-right>#connection{width:12px!important;min-width:12px!important;max-width:12px!important;}
+ body header.top>.jf-header-right>.jf-global-tools{
+   grid-template-columns:43px 96px!important;column-gap:4px!important;
+   width:143px!important;min-width:143px!important;max-width:143px!important;
+ }
+ body header.top .jf-global-tools button{font-size:10px!important;padding:2px!important;}
+ body header.top .jf-global-tools .jf-wifi-label{display:none!important;}
+}
+@media(max-width:540px){
+ body header.top,body.jf-home-landscape header.top,body.jf-browser header.top,body.page-media header.top{
+   grid-template-columns:minmax(0,1fr) 57px minmax(0,1fr)!important;
+   padding:0 4px!important;
+ }
+ body header.top>.eyebrow{font-size:12px!important;}
+ body header.top>#homeClock,body.page-media header.top>#homeClock{font-size:10px!important;width:57px!important;max-width:57px!important;transform:translateX(-8px)!important;}
+ body header.top>.jf-header-right,body.jf-home-landscape header.top>.jf-header-right,body.page-media header.top>.jf-header-right{
+   grid-template-columns:66px 9px 114px!important;column-gap:3px!important;
+   width:195px!important;min-width:195px!important;max-width:195px!important;
+ }
+ body header.top>.jf-header-right>.jf-top-metrics{width:66px!important;max-width:66px!important;gap:1px!important;}
+ body header.top .jf-top-metrics .jf-top-reading{font-size:9px!important;}
+ body header.top>.jf-header-right>#connection{width:9px!important;min-width:9px!important;max-width:9px!important;}
+ body header.top>.jf-header-right>.jf-global-tools{grid-template-columns:37px 74px!important;column-gap:3px!important;width:114px!important;min-width:114px!important;max-width:114px!important;}
+}
+
+/* Genuine tab-switch fix: media's legacy body.page-media .top !important
+   must not turn the shared header into a fixed flex container. */
+body.page-media main>header.top{
+  display:grid!important;
+  position:relative!important;
+  left:auto!important;right:auto!important;top:auto!important;
+  margin-left:0!important;
+  margin-top:0!important;
+  margin-bottom:6px!important;
+  width:calc(100vw - 96px)!important;
+  max-width:calc(100vw - 96px)!important;
+  height:46px!important;
+}
+body:not(.page-media) main>header.top{
+  width:calc(100vw - 96px)!important;
+  max-width:calc(100vw - 96px)!important;
+}
+/* Other page and navigation logic is left untouched. */
+@media(min-width:751px){body main,body.jf-browser main,body.jf-home-landscape main,body.page-data main,body.page-media main,body.page-status main,body.page-tpms main{padding-top:6px!important;}}
+</style>
+</body></html>
