@@ -1,4 +1,16 @@
-# Release Notes\n\n## v1.0.2 — Dashboard and Interface Update\n\n- Updated `app/src/main/assets/dashboard.html` to the V8.3 responsive interface.\n- Unified the shared header and navigation across vehicle, music and settings pages.\n- Added a collapsible music and TPMS side panel, with additional space for vehicle readings.\n- Improved tire-pressure spacing, vehicle-value font resizing, and slider-based typography settings.\n- Clarified collapse and expand button icons and labels.\n- Retained existing EXLAP, CAN-facing app integrations, media controls and Safari Touchpad services.\n\n**Verification:** The maintainer reports successful device testing of the v1.0.2 update. The official v1.0.2 GitHub Release and downloadable APK remain pending. Publish only an APK built from the merged v1.0.2 source with the intended signing configuration.\n
+# Release Notes
+
+## v1.0.2 — Dashboard and Interface Update
+
+- Updated `app/src/main/assets/dashboard.html` to the V8.3 responsive interface.
+- Unified the shared header and navigation across vehicle, music and settings pages.
+- Added a collapsible music and TPMS side panel, with additional space for vehicle readings.
+- Improved tire-pressure spacing, vehicle-value font resizing, and slider-based typography settings.
+- Clarified collapse and expand button icons and labels.
+- Retained existing EXLAP, CAN-facing app integrations, media controls and Safari Touchpad services.
+
+**Release:** [v1.0.2 on GitHub](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.2). The maintainer reports successful testing on their device. Compatibility varies with the Android device and head-unit configuration.
+
 
 ## v1.0.0 — Initial Community Release
 
