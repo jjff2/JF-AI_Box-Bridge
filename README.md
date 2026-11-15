@@ -22,11 +22,20 @@ Media information, playback buttons, source status and volume controls. Availabl
 
 ## Download
 
-**Latest published APK:** [v1.0.1 — GitHub Release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.1)\n\n**v1.0.2 Dashboard update:** Prepared in the release branch; APK publication follows verification.
+**Latest published APK:** [v1.0.1 — GitHub Release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.1)
+
+**v1.0.2 Dashboard update:** Prepared in the release branch; APK publication follows verification.
 
 On the release page, expand **Assets** and download `app.apk`. Install it on a compatible Android device. Only install software from sources you trust.
 
-## v1.0.2 Dashboard Improvements (in preparation)\n\n- Consolidated header and navigation layout for vehicle, media and settings views.\n- Collapsible music and tire-pressure panels, allowing vehicle readings more space.\n- Adjustable typography with live vehicle-data preview and clearer expand/collapse controls.\n- Responsive layouts for Android AI Box, desktop browsers, iPhone and iPad; device support must be verified.\n\n## Main Features
+## v1.0.2 Dashboard Improvements (in preparation)
+
+- Consolidated header and navigation layout for vehicle, media and settings views.
+- Collapsible music and tire-pressure panels, allowing vehicle readings more space.
+- Adjustable typography with live vehicle-data preview and clearer expand/collapse controls.
+- Responsive layouts for Android AI Box, desktop browsers, iPhone and iPad; device support must be verified.
+
+## Main Features
 
 - **Vehicle dashboard:** Display supported real-time EXLAP vehicle data, including speed, RPM, battery voltage, temperatures and other available signals.
 - **Tire pressure:** Show four-wheel TPMS readings and status when provided by the vehicle.
