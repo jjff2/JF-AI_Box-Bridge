@@ -1,4 +1,4 @@
-# Release Notes
+# Release Notes\n\n## v1.0.2 — Dashboard and Interface Update (release candidate)\n\n- Updated `app/src/main/assets/dashboard.html` to the V8.3 responsive interface.\n- Unified the shared header and navigation across vehicle, music and settings pages.\n- Added a collapsible music and TPMS side panel, with additional space for vehicle readings.\n- Improved tire-pressure spacing, vehicle-value font resizing, and slider-based typography settings.\n- Clarified collapse and expand button icons and labels.\n- Retained existing EXLAP, CAN-facing app integrations, media controls and Safari Touchpad services.\n\n**Verification:** Source changes are prepared for review. The separately supplied APK contains a different dashboard asset and is not verified as the V8.3 build. A release APK should be built and tested from the merged revision before publishing.\n
 
 ## v1.0.0 — Initial Community Release
 
