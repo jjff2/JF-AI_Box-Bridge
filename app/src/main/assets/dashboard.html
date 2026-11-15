@@ -2439,6 +2439,21 @@ body:not(.page-media) main>header.top{
   width:calc(100vw - 96px)!important;
   max-width:calc(100vw - 96px)!important;
 }
+/* Keep the shared Wi-Fi shortcut fully inside the visible WebView viewport.
+   A small right inset is applied to the existing header controls only;
+   sizes, translations, and the other content are unchanged. */
+body header.top>.jf-header-right,
+body.jf-home-landscape header.top>.jf-header-right,
+body.jf-browser header.top>.jf-header-right,
+body.page-media header.top>.jf-header-right {
+  margin-right:12px!important;
+}
+@media(max-width:900px){
+  body header.top>.jf-header-right,
+  body.jf-home-landscape header.top>.jf-header-right,
+  body.jf-browser header.top>.jf-header-right,
+  body.page-media header.top>.jf-header-right { margin-right:6px!important; }
+}
 /* Other page and navigation logic is left untouched. */
 @media(min-width:751px){body main,body.jf-browser main,body.jf-home-landscape main,body.page-data main,body.page-media main,body.page-status main,body.page-tpms main{padding-top:6px!important;}}
 </style>
