@@ -2457,4 +2457,93 @@ body.page-media header.top>.jf-header-right {
 /* Other page and navigation logic is left untouched. */
 @media(min-width:751px){body main,body.jf-browser main,body.jf-home-landscape main,body.page-data main,body.page-media main,body.page-status main,body.page-tpms main{padding-top:6px!important;}}
 </style>
+
+<style id="jf-phone-header-no-overlap-v2">
+/* Phone portrait only. Use the same full-width coordinate system as main.
+   Grid row 1: brand + clock; row 2: telemetry + status + controls. */
+@media screen and (max-width:700px) and (orientation:portrait){
+  body main>header.top,
+  body.page-media main>header.top,
+  body:not(.page-media) main>header.top,
+  body.jf-browser main>header.top,
+  body.jf-home-landscape main>header.top{
+    position:relative!important;left:auto!important;right:auto!important;top:auto!important;
+    display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
+    grid-template-rows:32px 36px!important;align-items:center!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    height:76px!important;min-height:76px!important;max-height:none!important;
+    box-sizing:border-box!important;overflow:visible!important;
+    padding:3px 6px 5px!important;margin:0 0 10px!important;
+    gap:0!important;
+  }
+  body main>header.top>.eyebrow,
+  body.jf-browser main>header.top>.eyebrow{
+    grid-column:1!important;grid-row:1!important;justify-self:start!important;
+    position:static!important;min-width:0!important;max-width:100%!important;
+    font-size:16px!important;white-space:nowrap!important;
+    overflow:hidden!important;text-overflow:ellipsis!important;
+  }
+  body main>header.top>#homeClock,
+  body.page-media main>header.top>#homeClock,
+  body.jf-browser main>header.top>#homeClock,
+  body.jf-home-landscape main>header.top>#homeClock{
+    grid-column:2!important;grid-row:1!important;justify-self:end!important;
+    position:static!important;display:block!important;visibility:visible!important;
+    top:auto!important;left:auto!important;right:auto!important;inset:auto!important;
+    transform:none!important;margin:0!important;padding:0!important;
+    width:auto!important;min-width:0!important;max-width:none!important;
+    font-size:12px!important;text-align:right!important;white-space:nowrap!important;
+  }
+  body main>header.top>.jf-header-right,
+  body.page-media main>header.top>.jf-header-right,
+  body.jf-browser main>header.top>.jf-header-right,
+  body.jf-home-landscape main>header.top>.jf-header-right{
+    grid-column:1 / -1!important;grid-row:2!important;
+    display:grid!important;grid-template-columns:minmax(0,1fr) 12px auto!important;
+    grid-template-rows:34px!important;column-gap:7px!important;
+    justify-self:stretch!important;align-items:center!important;
+    position:static!important;inset:auto!important;transform:none!important;
+    box-sizing:border-box!important;width:100%!important;min-width:0!important;max-width:100%!important;
+    height:34px!important;min-height:34px!important;max-height:34px!important;
+    margin:0!important;padding:0!important;overflow:visible!important;
+  }
+  body main>header.top>.jf-header-right>.jf-top-metrics{
+    grid-column:1!important;grid-row:1!important;display:flex!important;
+    justify-content:flex-start!important;align-items:center!important;
+    width:auto!important;min-width:0!important;max-width:100%!important;
+    height:30px!important;overflow:hidden!important;gap:8px!important;
+  }
+  body main>header.top .jf-top-metrics .jf-top-label{display:none!important}
+  body main>header.top .jf-top-metrics .jf-top-item{flex:0 1 auto!important;min-width:0!important}
+  body main>header.top .jf-top-metrics .jf-top-reading{font-size:11px!important}
+  body main>header.top>.jf-header-right>#connection{
+    grid-column:2!important;grid-row:1!important;
+    display:flex!important;width:12px!important;min-width:12px!important;max-width:12px!important;
+    height:28px!important;margin:0!important;padding:0!important;
+  }
+  body main>header.top>.jf-header-right>.jf-global-tools{
+    grid-column:3!important;grid-row:1!important;
+    display:grid!important;grid-template-columns:45px 88px!important;
+    grid-template-rows:32px!important;column-gap:5px!important;
+    width:138px!important;min-width:138px!important;max-width:138px!important;
+    height:32px!important;margin:0!important;padding:0!important;overflow:visible!important;
+  }
+  body main>header.top .jf-global-tools button{
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    height:32px!important;min-height:32px!important;max-height:32px!important;
+    padding:3px 5px!important;font-size:11px!important;line-height:24px!important;
+  }
+  body main>header.top .jf-global-tools .jf-theme-shortcut{display:block!important}
+  body main>header.top .jf-global-tools .jf-wifi-shortcut{display:block!important}
+}
+@media screen and (max-width:370px) and (orientation:portrait){
+  body main>header.top>.jf-header-right{column-gap:4px!important}
+  body main>header.top>.jf-header-right>.jf-top-metrics{gap:4px!important}
+  body main>header.top>.jf-header-right>.jf-global-tools{
+    grid-template-columns:39px 75px!important;column-gap:3px!important;
+    width:117px!important;min-width:117px!important;max-width:117px!important;
+  }
+  body main>header.top .jf-top-metrics .jf-top-reading{font-size:10px!important}
+}
+</style>
 </body></html>
