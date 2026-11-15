@@ -24,7 +24,7 @@ Media information, playback buttons, source status and volume controls. Availabl
 
 **Latest published APK:** [v1.0.1 — GitHub Release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.1)
 
-**v1.0.2 Dashboard update:** Prepared in the release branch; APK publication follows verification.
+**v1.0.2 source update:** Merged into `main` and reported working in device testing. The GitHub Release APK has not yet been published.
 
 On the release page, expand **Assets** and download `app.apk`. Install it on a compatible Android device. Only install software from sources you trust.
 
