@@ -22,13 +22,13 @@ Media information, playback buttons, source status and volume controls. Availabl
 
 ## Download
 
-**Latest published APK:** [v1.0.1 — GitHub Release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.1)
+**Latest release: [JF AIBox Bridge v1.0.2 — Download APK](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.2)**
 
-**v1.0.2 source update:** Merged into `main` and reported working in device testing. The GitHub Release APK has not yet been published.
+Version 1.0.2 includes the V8.3 dashboard, adjustable text scaling and collapsible music/TPMS panel. The maintainer reports successful testing on their device. [Older releases](https://github.com/jjff2/JF-AI_Box-Bridge/releases) remain available.
 
-On the release page, expand **Assets** and download `app.apk`. Install it on a compatible Android device. Only install software from sources you trust.
+On the release page, expand **Assets** and download the APK file. Install it on a compatible Android device. Only install software from sources you trust.
 
-## v1.0.2 Dashboard Improvements (in preparation)
+## What's New in v1.0.2
 
 - Consolidated header and navigation layout for vehicle, media and settings views.
 - Collapsible music and tire-pressure panels, allowing vehicle readings more space.
@@ -58,7 +58,7 @@ Some functions require Android permissions and may not work with every vehicle, 
 
 ## Quick Start
 
-1. Download `app.apk` from the [v1.0.1 release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.1).
+1. Download the APK from the [v1.0.2 release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.2).
 2. Install and open JF AIBox Bridge on your Android phone or AI Box.
 3. Connect the Android device to the compatible MIB2.5 Wi-Fi network.
 4. Open the app's connection settings and use the available head unit IP detection or manual configuration.
