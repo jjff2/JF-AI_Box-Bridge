@@ -29,26 +29,25 @@ For a complete Android project, GitHub Desktop (https://desktop.github.com/) is 
 - Verify the APK was built from the source you intend to publish.
 - Choose a license for code you own after reviewing third-party code/assets. Do not imply CC BY 4.0 covers the entire app.
 
-## Step 4 — Publish an APK for regular users
+## Step 4 — Publish or update a GitHub Release
 
-1. In the repository, open **Releases** (or visit `https://github.com/YOUR_USERNAME/JF-AIBox-Bridge/releases`).
+1. In the repository, open [Releases](https://github.com/jjff2/JF-AI_Box-Bridge/releases).
 2. Select **Draft a new release**.
-3. Create tag `v1.0.0`.
-4. Release title: `JF AIBox Bridge v1.0.0`.
-5. Paste the release notes below.
+3. Choose the release tag matching the build (for the current release, `v1.0.2`; for future releases use a new version tag).
+4. Release title: `JF AIBox Bridge v1.0.2` for the current version.
+5. Copy the applicable notes from [RELEASE_NOTES.md](RELEASE_NOTES.md).
 6. Upload the **tested APK** as a release asset (do not upload a source ZIP instead of an APK).
 7. Select **Publish release**.
 
 ### Suggested GitHub Release text
 
-**JF AIBox Bridge v1.0.0 — Initial Community Release**
+**JF AIBox Bridge v1.0.2 — Dashboard & UI Improvements**
 
-- Vehicle dashboard and supported EXLAP telemetry
-- TPMS data where available
-- Android media information and playback controls
-- iPhone/iPad Safari Touchpad and JPEG screen mirroring
-- App shortcuts, Wi-Fi QR entry points and connection diagnostics
-- No JF activation code or subscription
+- Unified vehicle dashboard, header and navigation
+- Collapsible media and TPMS side panel
+- Adjustable text size and responsive dashboard layout
+- Supported vehicle EXLAP telemetry, TPMS and media playback controls
+- Safari Touchpad, optional JPEG screen mirroring, Wi-Fi QR and diagnostics
 
 **Setup:** Connect the Android AI Box to a compatible head-unit Wi-Fi for EXLAP. Enable Android Notification Access for media metadata, Accessibility for remote gestures, and approve Screen Capture for mirroring. Keep the iPhone/iPad and AI Box reachable on a trusted local network. See the README and Installation Guide.
 
