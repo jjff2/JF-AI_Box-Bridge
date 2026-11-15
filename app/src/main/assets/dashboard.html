@@ -2552,17 +2552,32 @@ body.page-media header.top>.jf-header-right {
 @media(min-width:751px){body main,body.jf-browser main,body.jf-home-landscape main,body.page-data main,body.page-media main,body.page-status main,body.page-tpms main{padding-top:6px!important;}}
 </style>
 
-<style id="jf-car-sidebar-top-gap-fix">
-/* Keep first vehicle navigation icon immediately below the brand/header.
-   Only affect Android/desktop landscape; retain iPhone Safari bottom nav. */
-@media (orientation:landscape) and (min-width:901px){
-  body:not(.jf-ipad-browser) .home-sidebar{
-    padding-top:5px!important;
-    row-gap:5px!important;
-    justify-content:flex-start!important;
+
+
+<style id="jf-header-left-corner-seam-fix">
+/* Fill the empty top-left corner caused by the 96px sidebar offset.
+   Do NOT alter nav icons, data grids, or the right-side status controls. */
+@media (orientation:landscape) and (min-width:901px) {
+  body:not(.jf-ipad-browser) main > header.top {
+    position:relative !important;
+    isolation:isolate;
+    overflow:visible !important;
   }
-  body:not(.jf-ipad-browser) .home-sidebar>button[data-tab="data"]{
-    margin-top:0!important;
+  body:not(.jf-ipad-browser) main > header.top::before {
+    content:"";
+    position:absolute;
+    box-sizing:border-box;
+    right:100%;
+    top:0;
+    width:96px;
+    height:100%;
+    background:var(--card);
+    border-bottom:1px solid var(--border);
+    pointer-events:none;
+    z-index:-1;
+  }
+  body:not(.jf-ipad-browser) .home-sidebar {
+    border-top:0 !important;
   }
 }
 </style>
