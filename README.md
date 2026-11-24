@@ -28,10 +28,16 @@ Version 1.0.3 adds individual four-wheel tire temperatures, Celsius/Fahrenheit s
 
 On the release page, expand **Assets** and download the APK file. Install it on a compatible Android device. Only install software from sources you trust.
 
+## What's New in v1.0.4 (source update)
+
+- Fixed tire temperature decoding: valid EXLAP readings are displayed directly in Celsius, without subtracting 60. Fahrenheit conversion is unchanged.
+- The maintainer observed correct readings after driving and allowing the TPMS sensors to update. Initial readings may be incomplete. Verify readings on your vehicle.
+- The v1.0.3 APK contains the previous incorrect offset; use v1.0.4 once the replacement APK is published.
+
 ## What's New in v1.0.3
 
 - Four-wheel tire temperature readings, independent °C / °F selection, and corrected vehicle-information display.
-- **TPMS firmware prerequisite:** In the maintainer's configuration, compatible TPMS module firmware had to be flashed before the head unit could expose tire temperature over EXLAP. The APK itself does not flash the module. See the [Drive2 community reference](https://www.drive2.ru/l/748710244984567276/) and [release notes](RELEASE_NOTES.md) for details. Firmware compatibility and the raw −60 offset must be verified on the vehicle.
+- **TPMS firmware prerequisite:** In the maintainer's configuration, compatible TPMS module firmware had to be flashed before the head unit could expose tire temperature over EXLAP. The APK itself does not flash the module. See the [Drive2 community reference](https://www.drive2.ru/l/748710244984567276/) and [release notes](RELEASE_NOTES.md) for details. Firmware compatibility and live readings must be verified on the vehicle.
 
 ## What's New in v1.0.2
 
