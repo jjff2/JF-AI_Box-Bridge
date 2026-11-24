@@ -1,18 +1,26 @@
 # Release Notes
 
+## v1.0.4 — Tire Temperature Correction
+
+- Removed the incorrect subtraction of 60 from valid EXLAP tire temperature readings in both the four-wheel panel and vehicle dashboard.
+- Celsius values are displayed directly; Fahrenheit conversion remains unchanged.
+- After driving, the maintainer observed correct readings once the sensors had updated. Initial incomplete readings should not be used to infer an offset.
+- Retained TPMS firmware prerequisites, Drive2 attribution, layout and pressure logic.
+
+
 ## v1.0.3 — Four-wheel Tire Temperature Support
 
 - Added individual tire temperatures for the front-left, front-right, rear-left and rear-right wheels alongside existing tire-pressure readings.
 - Added an independent °C / °F selector with saved preferences.
 - Updated the vehicle-information tile to show all four corrected temperature values.
-- Applied the provisional raw temperature offset (raw value − 60 °C); actual readings and wheel mapping should be verified on the vehicle.
+- Applied a provisional raw temperature offset (raw value − 60 °C), subsequently found incorrect and removed in v1.0.4.
 - Preserved the original dashboard layout, themes and pressure warning logic.
 
 ### Important: TPMS firmware prerequisite
 
 The app can display tire temperatures only when the vehicle's TPMS control module and head unit expose the corresponding EXLAP `tyreTemperatures` data. In the maintainer's configuration, this required flashing compatible TPMS module firmware following the community information below. Installing this APK alone does not unlock tire temperature data or flash any vehicle module.
 
-**Reference / credit:** [Drive2 community article](https://www.drive2.ru/l/748710244984567276/). The firmware procedure is external to this project; verify hardware and firmware compatibility before attempting any module update. Unsupported or unavailable values are shown as dashes. The offset and per-wheel display have not yet been independently validated on all configurations.
+**Reference / credit:** [Drive2 community article](https://www.drive2.ru/l/748710244984567276/). The firmware procedure is external to this project; verify hardware and firmware compatibility before attempting any module update. Unsupported or unavailable values are shown as dashes. Per-wheel readings should be verified on the vehicle.
 
 
 ## v1.0.2 — Dashboard and Interface Update
