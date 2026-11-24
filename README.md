@@ -10,7 +10,7 @@ JF AIBox Bridge is a community-developed Android application that uses EXLAP to 
 
 ### Vehicle Dashboard & Tire Pressure Monitoring
 
-Live EXLAP data shown on the vehicle display: speed, engine RPM, torque, boost pressure, battery voltage, acceleration, coolant temperature and four-wheel tire pressure (where supported).
+Live EXLAP data shown on the vehicle display: speed, engine RPM, torque, boost pressure, battery voltage, acceleration, coolant temperature and four-wheel tire pressure (where supported). Version 1.0.3 also supports individual tire temperatures when exposed by the vehicle.
 
 ![JF AIBox Bridge vehicle dashboard and TPMS](screenshots/dashboard.jpg)
 
@@ -27,6 +27,11 @@ Media information, playback buttons, source status and volume controls. Availabl
 Version 1.0.2 includes the V8.3 dashboard, adjustable text scaling and collapsible music/TPMS panel. The maintainer reports successful testing on their device. [Older releases](https://github.com/jjff2/JF-AI_Box-Bridge/releases) remain available.
 
 On the release page, expand **Assets** and download the APK file. Install it on a compatible Android device. Only install software from sources you trust.
+
+## What's New in v1.0.3
+
+- Four-wheel tire temperature readings, independent °C / °F selection, and corrected vehicle-information display.
+- **TPMS firmware prerequisite:** In the maintainer's configuration, compatible TPMS module firmware had to be flashed before the head unit could expose tire temperature over EXLAP. The APK itself does not flash the module. See the [Drive2 community reference](https://www.drive2.ru/l/748710244984567276/) and [release notes](RELEASE_NOTES.md) for details. Firmware compatibility and the raw −60 offset must be verified on the vehicle.
 
 ## What's New in v1.0.2
 
