@@ -1,5 +1,20 @@
 # Release Notes
 
+## v1.0.3 — Four-wheel Tire Temperature Support
+
+- Added individual tire temperatures for the front-left, front-right, rear-left and rear-right wheels alongside existing tire-pressure readings.
+- Added an independent °C / °F selector with saved preferences.
+- Updated the vehicle-information tile to show all four corrected temperature values.
+- Applied the provisional raw temperature offset (raw value − 60 °C); actual readings and wheel mapping should be verified on the vehicle.
+- Preserved the original dashboard layout, themes and pressure warning logic.
+
+### Important: TPMS firmware prerequisite
+
+The app can display tire temperatures only when the vehicle's TPMS control module and head unit expose the corresponding EXLAP `tyreTemperatures` data. In the maintainer's configuration, this required flashing compatible TPMS module firmware following the community information below. Installing this APK alone does not unlock tire temperature data or flash any vehicle module.
+
+**Reference / credit:** [Drive2 community article](https://www.drive2.ru/l/748710244984567276/). The firmware procedure is external to this project; verify hardware and firmware compatibility before attempting any module update. Unsupported or unavailable values are shown as dashes. The offset and per-wheel display have not yet been independently validated on all configurations.
+
+
 ## v1.0.2 — Dashboard and Interface Update
 
 - Updated `app/src/main/assets/dashboard.html` to the V8.3 responsive interface.
