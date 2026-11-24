@@ -22,17 +22,17 @@ Media information, playback buttons, source status and volume controls. Availabl
 
 ## Download
 
-**Latest release: [JF AIBox Bridge v1.0.3 — Download APK](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.3)**
+**Latest release: [JF AIBox Bridge v1.0.4 — Download APK](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.4)**
 
-Version 1.0.3 adds individual four-wheel tire temperatures, Celsius/Fahrenheit selection and corrected temperature readings, while retaining the V8.3 dashboard and customizable interface. Compatible TPMS module firmware may be required. [Older releases](https://github.com/jjff2/JF-AI_Box-Bridge/releases) remain available.
+Version 1.0.4 corrects tire temperature readings by removing the unnecessary −60°C offset, while retaining four-wheel temperature monitoring, Celsius/Fahrenheit selection and the customizable V8.3 dashboard. Compatible TPMS module firmware may be required. [Older releases](https://github.com/jjff2/JF-AI_Box-Bridge/releases) remain available.
 
 On the release page, expand **Assets** and download the APK file. Install it on a compatible Android device. Only install software from sources you trust.
 
-## What's New in v1.0.4 (source update)
+## What's New in v1.0.4
 
 - Fixed tire temperature decoding: valid EXLAP readings are displayed directly in Celsius, without subtracting 60. Fahrenheit conversion is unchanged.
 - The maintainer observed correct readings after driving and allowing the TPMS sensors to update. Initial readings may be incomplete. Verify readings on your vehicle.
-- The v1.0.3 APK contains the previous incorrect offset; use v1.0.4 once the replacement APK is published.
+- Users of v1.0.3 should update to v1.0.4 because the earlier version applies an incorrect temperature offset.
 
 ## What's New in v1.0.3
 
@@ -69,7 +69,7 @@ Some functions require Android permissions and may not work with every vehicle, 
 
 ## Quick Start
 
-1. Download the APK from the [v1.0.3 release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.3).
+1. Download the APK from the [v1.0.4 release](https://github.com/jjff2/JF-AI_Box-Bridge/releases/tag/v1.0.4).
 2. Install and open JF AIBox Bridge on your Android phone or AI Box.
 3. Connect the Android device to the compatible MIB2.5 Wi-Fi network.
 4. Open the app's connection settings and use the available head unit IP detection or manual configuration.
